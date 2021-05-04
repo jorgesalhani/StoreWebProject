@@ -71,7 +71,7 @@ After developing the store client-side mockup, you should now implement it.
 1. Develop the client-side of the application, based on the requirements outlined in the previous milestone
 2. Apply the HTML5, CSS3, and JavaScript expertise learned in the course
 
-# What should be ready (in your GitHub Project)
+### What should be ready (in your GitHub Project)
 - All client program interfaces and features should be functional. Meaning that they should respond to user input, but not necessarily do something useful.
 - HTML5, CSS3, and Javascript files with the client code. There must be an index.html file and the client should work by placing these files on an HTTP server and pointing the browser to that file.
 - Test results (see below).
@@ -82,5 +82,25 @@ The allowed javascript frameworks are jQuery, materializecss, React, and Vue.
 Tips: 
 - Update all Project Report topics to reflect the current state of your project. 
 - Make sure your Build Procedures are easily understandable to avoid problems with reviewers unable to run your program. 
+- If you do not use testing tools, just describe the tests performed and their results.
+- The Comments About the Code, Problems and Comments topics are not mandatory (just write No comments or No problems).
+
+## Final Version: Fully Functional Application
+### Objectives:
+1. Fully develop the Online Store application, based on the requirements outlined in the previous tasks
+2. Applying HTML5, CSS3, JavaScript, Node.js and NoSQL expertise learned in the course
+After developing the client-side of the Online Store, now the full application should be deployed, including server and database sides.
+
+### What should be ready (in your GitHub Project)
+- All interfaces and features of the program must be ok (client and server). 
+- Server functionality must be implemented using node.js and the NoSQL databases (CouchDB or MongoDB).
+- The allowed javascript frameworks are Vue, jQuery, Vuetify, and React.
+- The source code must be properly formatted and commented on. 
+- The code should be compiled in a distributable form. There must be an index.html file.
+- All Project Report topics must be finished.
+
+### Tips: 
+- Update all Project Report topics to reflect the current state of your project. 
+- Check again your Build Procedures and make sure they work for the client and server-side. Do not forget to initialize the database. Avoid problems with reviewers unable to run your program. 
 - If you do not use testing tools, just describe the tests performed and their results.
 - The Comments About the Code, Problems and Comments topics are not mandatory (just write No comments or No problems).
