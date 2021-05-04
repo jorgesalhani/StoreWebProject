@@ -63,3 +63,24 @@ These are just suggestions. Feel free to use other combinations:
 - If you are an administrator
 - Screen with actions: register administrators / customers / products / etc.) in a menu
 - Product Inventory Management Screen (Add, Update, Delete, Consult)
+
+
+## Project Milestone 2: Client Functionality
+After developing the store client-side mockup, you should now implement it.
+### Objectives: 
+1. Develop the client-side of the application, based on the requirements outlined in the previous milestone
+2. Apply the HTML5, CSS3, and JavaScript expertise learned in the course
+
+# What should be ready (in your GitHub Project)
+- All client program interfaces and features should be functional. Meaning that they should respond to user input, but not necessarily do something useful.
+- HTML5, CSS3, and Javascript files with the client code. There must be an index.html file and the client should work by placing these files on an HTTP server and pointing the browser to that file.
+- Test results (see below).
+
+There is no need to develop a server-side. Server functionality can be implemented in the client through mock objects. Mock objects are “fake” objects that simulate the behavior of a “real” class or object so that we can focus the test on the code being tested. For example, application data can be saved locally (in memory or the browser local storage). This allows you to simulate (for a single client) all server database functionality.
+The Test Plan and Test Results topics of your Project Report must include a test script of the program functionalities and the results of the tests performed by the team.
+The allowed javascript frameworks are jQuery, materializecss, React, and Vue.
+Tips: 
+- Update all Project Report topics to reflect the current state of your project. 
+- Make sure your Build Procedures are easily understandable to avoid problems with reviewers unable to run your program. 
+- If you do not use testing tools, just describe the tests performed and their results.
+- The Comments About the Code, Problems and Comments topics are not mandatory (just write No comments or No problems).
