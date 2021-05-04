@@ -1,6 +1,6 @@
 # StoreWebProject
 Colaborative project from [Introduction to Web Development](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=SCC0219) - Building a web store
-
+Original file: https://docs.google.com/document/d/160_UcFtJu9pbvlwHxZntpPkyYJSht-EEaCqmZYELqEw/edit#
 
 ## Overview
 You are a software developer and one of your clients hired you to create an online store. You can create the details for this store, such as the products and or services it sells. For instance, It may be an online:
