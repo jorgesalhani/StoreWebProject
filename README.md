@@ -13,8 +13,8 @@ We chose: a cakery
 
 ## Requirements
 1. The system must have 2 types of users: Clients and Administrators
-- a Administrators are responsible for registering/managing administrators, customers, and products/services provided. The application already comes with an account admin with password admin.
-- b Customers are users who access the system to buy products/services.
+- Administrators are responsible for registering/managing administrators, customers, and products/services provided. The application already comes with an account admin with password admin.
+- Customers are users who access the system to buy products/services.
 2. The admin record includes, at least: name, id, phone, email.
 3. Each customer's record includes, at least: name, id, address, phone, email
 4. Product/services records include, at least: name, id, photo, description, price, quantity (in stock), quantity sold.
