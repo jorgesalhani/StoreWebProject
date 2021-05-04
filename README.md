@@ -23,3 +23,43 @@ We chose: a cakery
 7. Product/Service Management: Administrators can create/update/read/delete (crud) new products and services. For example, they can change the stock quantity.
 8. Your functionality: Create a functionality that is specific to your application. It does not have to be something complicated. For instance, if you are selling cars, you may allow users to use an accelerator to hear how each car engine roars up and down.   
 9. The system must provide accessibility requirements and provide good usability. The system must be responsive.
+
+
+## Project Milestone 1: Store Mockups
+The most common use of mockups in software development is to create user interfaces that show the end-user what the software will look like without having to build the software or the underlying functionality. UI mockups can range from very simple hand-drawn screen layouts, through realistic bitmaps, to semi-functional user interfaces developed in a software development tool.
+
+### Objectives:
+Develop a mockup (medium-high fidelity) of the Online Store application graphical user interface (client-side). It should be, based on the requirements listed in the following sections.
+Practice mockup, HTML5 and CSS3 languages
+What should be ready (in your GitHub Project)
+GitHub’s README.md file with the Project Report (see below). The report should include the following items.
+Navigation diagram for your application. You must use the Single-Page Application style. There is no need for fancy diagrams. You may even draw them on paper and photograph them using a cellphone. You can also use the Marvel tool to simulate the interaction between screens.
+Mockups for all major system screens. Ideally, all mockups should be static HTML5/CSS3 files. At a minimum, create these files for the main app screen and 2 other screens. Mockups can be made using HTML5/CSS3 files, mockup tools (e.g. Figma).
+
+### Project Report
+The Project Report should begin with the group identification and the names and USP numbers of all students in the group. The Project Report has to have the following sections:
+1. Requirements: The requirements are given in the assignment, but you have to add any new requirements needed by your particular store implementation.
+2. Project Description: Describe how your project implements the functionality in the requirements. Diagrams can help a lot here.
+3. Comments About the Code: Any comment you may want to add to help understand your code. This is good programming practice.
+4. Test Plan: Text describing the tests that will be performed. If an automatic test tool/framework is used (ex: Selenium, jUnit, Spock), the code for the tests can be used.
+5. Test Results: Text describing the test results. If an automatic test tool/framework is used, its output can be used.
+6. Build Procedures: A step-by-step guide to run your code. You should start telling how to install whatever software you need, then how to download/build your program, and finally how to set up the environment to run it. Imagine that someone installing will just follow these commands (nothing more).
+7. Problems: List any major problems you had.
+8. Comments: Any comments you wish to add.
+
+At this first milestone, you will probably only have material for the first two topics. But include the other topics, even if you leave them empty, and, if possible, write how you plan to implement them. For instance, for testing, you may say I intend to use the postman to test the back end, etc.
+
+### Do not forget to include in the Project Description:
+- The functionalities you are going to implement.
+- Navigation diagram for your application linked to the screen mockups. This link can be just the name of the mockup (i.e. Mockup1, Mockup2, etc) or an HTML link.
+- The information you are going to save in the server (no need to decide how that information will be saved).
+At this stage, do not focus on producing beautiful user interfaces (UIs) but rather think about what kinds of interfaces you will need and what information each interface needs to show and to ask from the user. Also, think about how the users should navigate your app to accomplish their tasks (such as buying a product, register, etc).
+
+### Layout Suggestions for Screens
+These are just suggestions. Feel free to use other combinations:
+- Homepage with a description of services/products offered and login area (any type of user) 
+- If the user is a customer: 
+- Screen with actions: buy a product, edit your account. 
+- If you are an administrator
+- Screen with actions: register administrators / customers / products / etc.) in a menu
+- Product Inventory Management Screen (Add, Update, Delete, Consult)
