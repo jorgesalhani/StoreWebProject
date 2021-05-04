@@ -1,5 +1,6 @@
 # StoreWebProject
 Colaborative project from [Introduction to Web Development](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=SCC0219) - Building a web store
+
 Original file: https://docs.google.com/document/d/160_UcFtJu9pbvlwHxZntpPkyYJSht-EEaCqmZYELqEw/edit#
 
 ## Overview
@@ -34,7 +35,9 @@ The most common use of mockups in software development is to create user interfa
 
 ### What should be ready (in your GitHub Project)
 - GitHub’s README.md file with the Project Report (see below). The report should include the following items.
+ 
  - Navigation diagram for your application. You must use the Single-Page Application style. There is no need for fancy diagrams. You may even draw them on paper and photograph them using a cellphone. You can also use the Marvel tool to simulate the interaction between screens.
+ 
  - Mockups for all major system screens. Ideally, all mockups should be static HTML5/CSS3 files. At a minimum, create these files for the main app screen and 2 other screens. Mockups can be made using HTML5/CSS3 files, mockup tools (e.g. Figma).
 
 ### Project Report
