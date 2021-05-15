@@ -1,7 +1,5 @@
 # Project Milestone 1 - Store Mockup
 
-
-
 Project
 
 O que vamos fazer?
@@ -20,6 +18,18 @@ Produtos
 Carrinho
 Meus Pedidos
 
+
+# PAGES
+
+1. Home
+2. Cadastro
+3. Login
+4. AdmPrivilegios
+5. AdmClientes
+6. AdmProdutoshh
+7. ProdutosTodos
+8. ProdutosEspecificos
+9. Carrinhoh
 
 # BUTTONS
 
