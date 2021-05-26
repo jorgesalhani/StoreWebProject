@@ -1,8 +1,12 @@
+@font-face {
+  font-family: 'Montserrat';
+}
+
 * {
+  font-family: 'Montserrat';
   margin: 0;
   box-sizing: border-box;
 }
-
 
 /* HEADER */
 header {
@@ -64,6 +68,11 @@ nav li {
 .presentation p {
   margin-top: 50px;
   font-size: 20px;
+}
+
+.presentation-background-color {
+  background-color: #DAC2A8;
+  text-align: center;
 }
 
 /* CONTENT */
