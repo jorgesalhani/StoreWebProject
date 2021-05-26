@@ -43,16 +43,49 @@ Ambas informações para query (mais vendidos e menores preços) devem ser selec
 3. Cadastro
 - Formulário simples contendo espaços textuais para preenchimento. O botão Cadastrar registra as informações passadas em um banco de dados conforme a página AdmClientes
 
-6. Profile
-7. ProfileEdit
-8. AdmPrivilegios
-9. AdmClientes
-10. AdmProdutoshh
-11. ProdutosTodos
-12. ProdutosEspecificos
-13. Carrinhoh
+4. Profile
+- Informações da conta com botão de edição. O botão redireciona à página ProfileEdit
 
-O acesso ao header e footer é comum a todas as páginas:
+5. ProfileEdit
+- Formulário simples contendo espaços textuais para preencimento. O botão Finalizar altera as informações do cliente previamente armazenadas com as novas
+
+6. AdmPrivilegios
+- Menu contendo abas: Gerenciar privilégios (página atual), Clientes, Produtos, Pedidos. Cada uma redireciona às páginas AdmClientes, AdmProdutos, AdmPedidos
+- Permite a manutenção de privilégios a cada uma das contas.
+- Dados presentes: Id, Nome, Email, Fone, Função, Privilégio
+
+7. AdmClientes
+- Permite acesso às contas de clientes já registradas
+- Dados presentes: Id, Nome, Email, Fone
+
+8. AdmProdutos
+- Permite acesso aos produtos registrados
+- Dados presentes: Id, Nome, Descrição, Foto, Preço, Número em estoque, Número de vendas
+
+9. AdmPedidos
+- Permite acesso aos pedidos já registrados
+- Dados presentes: Id, Nome, Comentário, Preço, Número de vendas, Data
+
+10. ProdutosTodos
+- Acesso a uma matriz de elementos, contendo cada produto vendido que apresente o rótulo clicado no menu do header (Bolos, Tortas, Cupcakes, Veganos, Diet)
+- Cada imagem é um link para uma página específica do produto selecionado seguindo a estrutura da página ProdutosEspecíficos
+- Abaixo de cada imagem, explicitamos detalhes do produto como preço e número em estoque;
+- Ao lado, temos uma caixa de texto contendo detalhes de descrição do produto
+- Ao fim da página, mantemos em qual número de página a pessoa está
+
+11. ProdutosEspecificos
+- Acesso àsinformações do produto selecionado
+- Botão que armazena o produto ao carrinho do cliente
+
+12. Carrinho
+- Lista contendo os produtos selecionados pelo cliente em aberto
+- Botão para adição de mais produtos ao carrinho
+- Botão de finalização de compra
+- Cada item permite ao cliente visualizar o número de itens do mesmo produto que foram adicionados e um botão com a função de customização
+
+A função de customização será o diferencial da nossa loja, onde pertimiremos aos clientes a adição ou remoção de ingredientes, formatos e outras especificidades ainda não construída)
+
+O acesso ao header e footer é comum a todas as páginas (com excessão às Adm*):
 a. header
 - Logo redirecionável à página Home;
 - Searchbar com busca via palavras-chave referentes aos nomes dos produtos e descrições;
@@ -63,11 +96,4 @@ a. header
 b. footer
 - Acesso às redes sociais de nossa loja. Instagram, Facebook e Twitter
 - Link à página Home e às páginas de contato e como se tornar um franqueado (ainda não construídas)
-
-
-# BUTTONS
-
-# TEXT INPUT
-
-# ANIMATIONS
 
