@@ -26,7 +26,7 @@ Requerimentos cumpridos:
 3. [Mockup completo](https://github.com/jorgesalhani/StoreWebProject/blob/main/Milestone01/MockUp.pdf) das páginas (high-fidelity)
 
 Abaixo estão listadas as funcionalidades que pretendemos implementar. Para cada página associaremos as funções desejadas.
-# PAGES
+# Mockup
 
 1. Home
 - Slider contendo os produtos mais vendidos
