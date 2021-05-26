@@ -23,7 +23,7 @@ Telas base da nossa aplicação
 Requerimentos cumpridos:
 1. Escrita do relatório (este documento!)
 2. [Diagrama de fluxo](https://github.com/jorgesalhani/StoreWebProject/blob/main/Milestone01/Fluxo_Pags.jpg)
-3. [Mockup completo](https://github.com/jorgesalhani/StoreWebProject/blob/main/Milestone01/MockUp.pdf) das páginas (high-fidelity)
+3. Mockup completo no [Figma](https://www.figma.com/community/file/979470959790367574) e em [pdf](https://github.com/jorgesalhani/StoreWebProject/blob/main/Milestone01/MockUp.pdf) das páginas (high-fidelity)
 
 Abaixo estão listadas as funcionalidades que pretendemos implementar. Para cada página associaremos as funções desejadas.
 # Mockup
