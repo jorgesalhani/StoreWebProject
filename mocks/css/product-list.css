@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Montserrat';
+}
+
+* {
+  font-family: 'Montserrat';
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* HEADER */
+header {
+  background-color: #4B847D;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.header-element {
+  margin: 20px;
+}
+
+.logo {
+  float: left;
+  height: 40px;
+  margin: 20px 30px;
+  border-radius: 50%;
+}
+
+.chart,
+.profile {
+  float: right;
+  height: 40px;
+  margin: 20px 30px;
+  border-radius: 10%;
+}
+
+.searchbar {
+  float: left;
+  width: 200px;
+}
+
+/* MENU */
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 30px auto;
+  width: 15%;
+  overflow-x: hidden;
+}
+
+
+/* PRESENTATION */
+.presentation-picture {
+  box-shadow: black;
+  width: 300px;
+}
+
+.presentation p {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.banner {
+    padding: 25px;
+}
+
+.green-bck{
+    background-color: #4B847D ;
+}
+
+.orange-bck{
+    background-color: #DAC2A8;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: unset;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 30px; */
+    font-size: 3.5vw;
+    font-weight: unset;
+}
+
+
+.text-banner {
+    height: 100px;
+    padding: 35px;
+}
+
+/* CONTENT */
+.filter {
+    background-color: #f7f2ed;
+    flex: 25%;
+    padding-top: 15px;
+    position: relative;
+}
+
+.filter > h2 {
+    text-align: center;
+}
+
+.item-card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  flex: 33.3%;
+  margin: 15px;
+  
+}
+
+.item-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.item-card > img {
+  width: 40px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.product-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-gallery-item{
+    flex: 75%;
+    padding: 5px;
+}
+
+
+/* FOOTER */
+footer {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  background-color: #4B847D;
+  overflow: auto;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 30px;
+  color: #fff;
+  text-align: center;
+}
