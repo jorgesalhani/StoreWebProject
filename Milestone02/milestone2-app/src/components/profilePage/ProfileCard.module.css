@@ -1,0 +1,7 @@
+.profile-card {
+    font-size: 15px;
+    flex: auto;
+    justify-content: center;
+    background-color: whitesmoke;
+    border: 1px solid;
+}
