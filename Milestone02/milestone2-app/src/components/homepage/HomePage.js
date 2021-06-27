@@ -1,8 +1,8 @@
 import React from "react"
-import PresentationBanner from "./PresentationBanner"
+import PresentationBanner from "../shared/PresentationBanner"
 import ProductGallery from "./ProductGallery.js"
 import TablePromotions from "./TablePromotions"
-import TextBanner from "./TextBanner";
+import TextBanner from "../shared/TextBanner";
 
 function HomePage() {
     return (

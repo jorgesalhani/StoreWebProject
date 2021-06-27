@@ -3,14 +3,27 @@ import React from "react"
 import Header from "./components/header/Header.js"
 import HomePage from "./components/homepage/HomePage.js"
 import Footer from "./components/footer/Footer.js"
-import NavBar from "./components/homepage/NavBar.js";
+import NavBar from "./components/shared/NavBar.js"
+
+import ProductListPage from "./components/productListPage/ProductListPage.js"
+
+// function App() {
+//     return (
+//         <div>
+//             <Header />
+//             <NavBar />
+//             <HomePage />
+//             <Footer />
+//         </div>
+//     )
+// }
 
 function App() {
     return (
         <div>
             <Header />
             <NavBar />
-            <HomePage />
+            <ProductListPage />
             <Footer />
         </div>
     )
