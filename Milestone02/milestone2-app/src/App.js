@@ -8,23 +8,12 @@ import NavBar from "./components/shared/NavBar.js"
 import ProductListPage from "./components/productListPage/ProductListPage.js"
 import ProductPage from "./components/ProductPage/ProductPage";
 
-// function App() {
-//     return (
-//         <div>
-//             <Header />
-//             <NavBar />
-//             <HomePage />
-//             <Footer />
-//         </div>
-//     )
-// }
-
 function App() {
     return (
         <div>
             <Header />
             <NavBar />
-            <ProductPage />
+            <HomePage />
             <Footer />
         </div>
     )

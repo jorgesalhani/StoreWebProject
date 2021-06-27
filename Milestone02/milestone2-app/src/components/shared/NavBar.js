@@ -12,7 +12,6 @@ function NavBar() {
                 <li className={NavBarCSS.li}>Diet</li>
             </ul>
         </nav>
-
     )
 }
 

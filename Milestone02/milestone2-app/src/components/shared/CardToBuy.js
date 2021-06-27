@@ -1,7 +1,7 @@
 import React from "react";
 import CardToBuyCSS from "./CardToBuy.module.css"
 import chart from "../img/chart.png"
-import AddToChartButton from "./AddToChartButton";
+import AddToCartButton from "./AddToCartButton";
 
 function CardToBuy(props) {
     return (
@@ -13,7 +13,7 @@ function CardToBuy(props) {
                 </div>
                 <div className={CardToBuyCSS.buying}>
                     <p>R$ {props.price}</p>
-                    <AddToChartButton />
+                    <AddToCartButton />
                 </div>
         </div>
     )

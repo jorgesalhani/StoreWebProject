@@ -1,7 +1,7 @@
 import React from "react"
 import chart from "../img/chart.png"
 
-function AddToChartButton() {
+function AddToCartButton() {
     return (
         <a href="#">
             <img className="chart"
@@ -10,4 +10,4 @@ function AddToChartButton() {
     )
 }
 
-export default AddToChartButton
+export default AddToCartButton
