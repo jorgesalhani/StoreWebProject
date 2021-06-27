@@ -1,6 +1,5 @@
 import React from "react"
 import PresentationBannerCSS from "./PresentationBanner.module.css"
-import '../../style.css'
 
 function PresentationBanner() {
     return (

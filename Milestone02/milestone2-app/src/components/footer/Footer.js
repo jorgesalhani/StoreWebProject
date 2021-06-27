@@ -1,6 +1,7 @@
 import React from "react"
-import "./Footer.css"
+import FooterCSS from "./Footer.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
     faFacebook,
     faTwitter,
@@ -9,20 +10,20 @@ import {
 
 function Footer() {
     return (
-        <footer>
+        <footer className={FooterCSS.footer}>
             <ul>
-                <li>
+                <li className={FooterCSS.li}>
                     <a href="https://www.facebook.com/learnbuildteach/"
                     className="facebook social">
                     <FontAwesomeIcon icon={faFacebook} size="2x" />
                     </a>
                 </li>
-                <li>
+                <li className={FooterCSS.li}>
                     <a href="https://www.twitter.com/jamesqquick" className="twitter social">
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                     </a>
                 </li>
-                <li>
+                <li className={FooterCSS.li}>
                 <a href="https://www.instagram.com/learnbuildteach"
                     className="instagram social">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
