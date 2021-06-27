@@ -1,4 +1,4 @@
- li{
+ .li{
      text-align: center;
      list-style-type: none;
      display: inline-block;
@@ -7,6 +7,10 @@
      overflow-x: hidden;
 }
 
- ul {
+ .ul {
      text-align: center;
+ }
+
+ .NavBar {
+    box-shadow: 10px 10px 10px 1px rgba(0, 1, 1, 0.2);
  }

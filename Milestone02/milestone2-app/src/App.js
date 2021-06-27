@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer.js"
 import NavBar from "./components/shared/NavBar.js"
 
 import ProductListPage from "./components/productListPage/ProductListPage.js"
+import ProductPage from "./components/ProductPage/ProductPage";
 
 // function App() {
 //     return (
@@ -23,7 +24,7 @@ function App() {
         <div>
             <Header />
             <NavBar />
-            <ProductListPage />
+            <ProductPage />
             <Footer />
         </div>
     )
