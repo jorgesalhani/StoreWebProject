@@ -5,7 +5,6 @@ import TableProductList from "./TableProductList"
 function MainContent() {
     return (
         <div style={{display:"flex"}}>
-            <FiltersSidebar />
             <TableProductList />
         </div>
     )
