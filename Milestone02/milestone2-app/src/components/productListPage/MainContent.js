@@ -1,11 +1,10 @@
 import React from "react"
-import FiltersSidebar from "./FiltersSidebar"
 import TableProductList from "./TableProductList"
 
-function MainContent() {
+function MainContent(props) {
     return (
         <div style={{display:"flex"}}>
-            <TableProductList />
+            <TableProductList state={props.productType} />
         </div>
     )
 }
