@@ -1,0 +1,15 @@
+.profileCard {
+    background-color: bisque;
+    display: flex;
+    text-align: left;
+}
+
+.infoField {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.infoBlock {
+    margin: 30px;
+    width: 50%;
+}

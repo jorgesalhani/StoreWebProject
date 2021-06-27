@@ -7,6 +7,8 @@ import NavBar from "./components/shared/NavBar.js"
 
 import ProductListPage from "./components/productListPage/ProductListPage.js"
 import ProductPage from "./components/ProductPage/ProductPage";
+import ProfilePage from "./components/ProfilePage/ProfilePage";
+
 
 function App() {
     return (
@@ -18,6 +20,7 @@ function App() {
                     <Route path='/' exact component={HomePage} />
                     <Route path='/product-list' component={ProductListPage} />
                     <Route path='/product-details' component={ProductPage} />
+                    <Route path='/profile' component={ProfilePage} />
                 </Switch>
                 <Footer />
             </Router>
