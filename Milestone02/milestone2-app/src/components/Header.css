@@ -1,0 +1,32 @@
+header {
+    background-color: #4B847D;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
+.header-element {
+    margin: 20px;
+}
+
+.logo {
+    float: left;
+    height: 40px;
+    margin: 20px 30px;
+    border-radius: 50%;
+}
+
+.chart,
+.profile {
+    float: right;
+    height: 40px;
+    margin: 20px 30px;
+    border-radius: 10%;
+}
+
+input {
+    float: left;
+    width: 200px;
+}

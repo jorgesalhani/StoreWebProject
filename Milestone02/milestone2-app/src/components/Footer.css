@@ -1,0 +1,17 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    background-color: #4B847D;
+    overflow: auto;
+  }
+  
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 30px;
+    color: #fff;
+    text-align: center;
+}
+  
