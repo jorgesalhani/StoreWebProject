@@ -3,22 +3,28 @@ import cakeshop from "../img/cakeshop.jpg"
 import chart from "../img/chart.png"
 import profile from "../img/profile.png"
 import "./Header.css"
+import {Link} from "react-router-dom";
 
 function Header() {
     return (
         <header>
-        <img className="logo"
-        src={cakeshop} alt="" />
+            <Link to="/">
+                <img className="logo"
+                src={cakeshop} alt="" />
+            </Link>
 
-        <input type="text"
-               placeholder="O que você precisa?" />
+            <input type="text"
+                   placeholder="O que você precisa?" />
 
-        <img className="chart"
-        src={chart} alt="" />
+            <Link to="/cart">
+                <img className="chart"
+                src={chart} alt="" />
+            </Link>
 
-
-        <img className="profile"
-        src={profile} alt="" />
+            <Link to="/profile">
+                <img className="profile"
+                src={profile} alt="" />
+            </Link>
 
         </header>
     )

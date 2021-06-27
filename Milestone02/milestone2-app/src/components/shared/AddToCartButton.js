@@ -1,12 +1,13 @@
 import React from "react"
 import chart from "../img/chart.png"
+import {Link} from "react-router-dom";
 
 function AddToCartButton() {
     return (
-        <a href="#">
+        <button>
             <img className="chart"
             src={chart} alt=""/>
-        </a>
+        </button>
     )
 }
 
