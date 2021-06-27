@@ -1,0 +1,11 @@
+.pesentationBanner{
+    text-align: center;
+    padding: 25px;
+    background-color: #4B847D;
+}
+
+.presentationPicture {
+    box-shadow: black;
+    width: 300px;
+}
+

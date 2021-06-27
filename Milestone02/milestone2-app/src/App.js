@@ -1,14 +1,16 @@
 import React from "react"
 
-import Header from "./components/Header.js"
-import MainContent from "./components/MainContent.js"
-import Footer from "./components/Footer.js"
+import Header from "./components/header/Header.js"
+import HomePage from "./components/homepage/HomePage.js"
+import Footer from "./components/footer/Footer.js"
+import NavBar from "./components/homepage/NavBar.js";
 
 function App() {
     return (
         <div>
             <Header />
-            <MainContent />
+            <NavBar />
+            <HomePage />
             <Footer />
         </div>
     )

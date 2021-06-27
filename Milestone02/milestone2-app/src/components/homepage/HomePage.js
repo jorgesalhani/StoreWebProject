@@ -1,18 +1,19 @@
 import React from "react"
-import NavMenu from "./NavMenu"
 import PresentationBanner from "./PresentationBanner"
-import ProductGallery from "./ProductGallery"
+import ProductGallery from "./ProductGallery.js"
 import TablePromotions from "./TablePromotions"
+import TextBanner from "./TextBanner";
 
-function MainContent() {
+function HomePage() {
     return (
         <div>
-            <NavMenu />
             <PresentationBanner />
+            <TextBanner text={"Mais Vendidos"} color={"#DAC2A8"}/>
             <ProductGallery />
+            <TextBanner text={"Promoções"} color={"#4B847D"}/>
             <TablePromotions />
         </div>
     )
 }
 
-export default MainContent 
+export default HomePage

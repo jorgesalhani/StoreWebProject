@@ -1,0 +1,12 @@
+ li{
+     text-align: center;
+     list-style-type: none;
+     display: inline-block;
+     margin: 30px auto;
+     width: 15%;
+     overflow-x: hidden;
+}
+
+ ul {
+     text-align: center;
+ }

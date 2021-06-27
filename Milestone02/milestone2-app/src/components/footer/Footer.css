@@ -7,7 +7,7 @@ footer {
     overflow: auto;
   }
   
-li {
+footer > ul > li {
     list-style-type: none;
     display: inline-block;
     margin: 30px;
