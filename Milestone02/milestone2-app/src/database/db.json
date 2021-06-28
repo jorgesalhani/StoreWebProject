@@ -71,6 +71,8 @@
     "users": [
       { "id": 1, "userName": "cliente1", "password": "cliente1" },
       { "id": 2, "userName": "cliente2", "password": "cliente2" }
+    ],
+    "usersLogs": [
     ]
   }
 
