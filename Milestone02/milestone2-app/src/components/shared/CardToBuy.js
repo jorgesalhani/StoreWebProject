@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 
 function CardToBuy(props) {
     return (
-
             <div className={CardToBuyCSS.card}>
                 <Link to="/product-details" style={{textDecoration: "None"}}>
                     <img className={CardToBuyCSS.cardImg} src={props.img} alt={props.name}/>
@@ -19,7 +18,6 @@ function CardToBuy(props) {
                         <AddToCartButton />
                     </div>
             </div>
-
     )
 }
 
