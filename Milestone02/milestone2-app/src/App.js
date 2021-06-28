@@ -9,6 +9,8 @@ import ProductListPage from "./components/productListPage/ProductListPage.js"
 import ProductPage from "./components/ProductPage/ProductPage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import CartPage from "./components/CartPage/CartPage.js";
+import PurchasePage from "./components/PurchasesPage/PurchasePage.js";
+import RegisterPage from "./components/RegisterPage/RegisterPage.js";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
                     <Route path='/product-details' component={ProductPage} />
                     <Route path='/profile' component={ProfilePage} />
                     <Route path='/cart' component={CartPage} />
+                    <Route path='/register' component={RegisterPage} />
+                    <Route path='/purchases' component={PurchasePage} />
                 </Switch>
                 <Footer />
             </Router>

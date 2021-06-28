@@ -10,7 +10,7 @@ function ProfileCard(props) {
                 <p>E-mail</p>
                 <p className={ProfileCardCSS.infoField}>{props.email}</p>
                 <p>Cartão cadastrado</p>
-                <p className={ProfileCardCSS.infoField}>{props.creditCard}</p>
+                <p className={ProfileCardCSS.infoField}>{props.creditCard} </p>
             </div>
             <div className={ProfileCardCSS.infoBlock}>
                 <p>Usuário</p>
