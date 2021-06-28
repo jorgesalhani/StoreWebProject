@@ -15,7 +15,7 @@ function CardToBuy(props) {
                 </div>
                 <div className={CardToBuyCSS.buying}>
                     <p>R$ {props.price}</p>
-                    <AddToCartButton />
+                    <AddToCartButton productId = {props.productId}/>
                 </div>
             </div>
     )

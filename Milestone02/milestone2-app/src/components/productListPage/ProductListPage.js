@@ -30,7 +30,7 @@ function ProductListPage(props) {
         let prod = data['products'][location]
 
         return prod.map( product => {
-                return <CardToBuy key={product.id} name={product.name} price={product.price} img={product.img} description={product.description}/>
+                return <CardToBuy key={product.id} name={product.name} price={product.price} img={product.img} description={product.description} productId = {product.id}/>
             }
         )
     }
