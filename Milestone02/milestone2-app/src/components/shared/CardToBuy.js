@@ -8,14 +8,15 @@ import { withRouter } from 'react-router-dom'
 function CardToBuy(props) {
     const { AddItemToCart } = useContext(SessionContext)
 
-    const productType = props.location.pathname[props.location.pathname.length -1]
-
-
+    let productType = props.location.pathname.split('/')
+    productType = productType[productType.length -1]
 
     return (
             <div className={CardToBuyCSS.card}>
                 <Link to={{
-                    pathname: `/product-details?product-type=${productType}&id=${props.product.id}`}} style={{textDecoration: "None"}}>
+                    pathname: "/product-details",
+                    search: `?product-type=${productType}&id=${props.product.id}`,
+                }} style={{textDecoration: "None"}}>
                     <img className={CardToBuyCSS.cardImg} src={props.product.img} alt={props.product.name}/>
                 </Link>
                 <div className={CardToBuyCSS.container}>
