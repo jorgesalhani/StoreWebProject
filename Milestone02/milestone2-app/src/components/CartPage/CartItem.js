@@ -9,8 +9,12 @@ function CartItem(props){
             <div className={CartItemCSS.cartInfoItem}>
                 <h3>{props.product.name}</h3>
                 <p>{props.product.description}</p>
+                <div className={CartItemCSS.cartPriceAndButton}>
+                    <p>Preço: {props.product.price}</p>
+                    <button
+                        onClick={props.removeFunction}> Remove</button>
+                </div>
             </div>
-            <button onClick={props.removeFunction}></button>
         </div>
     )
 }

@@ -1,5 +1,8 @@
 .cartImageItem {
-    width: 200px;
+    width: 40%;
+    min-width: 150px;
+    margin: 20px;
+    border-radius: 8px;
 }
 
 .cartInfoItem {
@@ -18,8 +21,22 @@
     margin: 1% 4%;
     display: flex;
     border-bottom: 1px solid rgb(209, 190, 161);
+    justify-content: center;
 }
 
 .cartItem:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cartItem 
+button {
+    margin: 3%;
+    font-size: 120%;
+}
+
+.cartPriceAndButton {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin: 10%;
 }

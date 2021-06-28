@@ -24,7 +24,7 @@ function CartPage(){
             <div style={{margin: "10% 0"}}>
                 {getCartItems()}
             </div>
-            <div>
+            <div className={CartPageCSS.totalPurchase}>
                 Valor total da compra: R${GetCartPrice()}
             </div>
         </div>
