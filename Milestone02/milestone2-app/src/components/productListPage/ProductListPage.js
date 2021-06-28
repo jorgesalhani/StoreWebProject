@@ -2,7 +2,6 @@ import React from "react"
 import PresentationBanner from "../shared/PresentationBanner"
 import TextBanner from "../shared/TextBanner"
 import MainContent from "./MainContent"
-import axios from "axios";
 
 function ProductListPage(props) {
 
