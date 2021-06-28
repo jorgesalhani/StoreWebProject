@@ -1,0 +1,26 @@
+.cartImageItem {
+    width: 200px;
+}
+
+.cartInfoItem {
+    text-align: "center";
+}
+
+.cartInfoItem h3 {
+    margin-bottom: 20px;
+}
+
+.cartItem {
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    margin: 10% 4%; 
+    display: flex;
+    border-bottom: 1px solid rgb(209, 190, 161);
+}
+
+.cartItem:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

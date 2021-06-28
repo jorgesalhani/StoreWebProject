@@ -1,6 +1,5 @@
 import React from "react";
 import CardToBuyCSS from "./CardToBuy.module.css"
-import chart from "../img/chart.png"
 import AddToCartButton from "./AddToCartButton";
 import {Link} from "react-router-dom";
 

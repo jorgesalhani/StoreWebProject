@@ -8,6 +8,7 @@ import NavBar from "./components/shared/NavBar.js"
 import ProductListPage from "./components/productListPage/ProductListPage.js"
 import ProductPage from "./components/ProductPage/ProductPage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
+import CartPage from "./components/CartPage/CartPage.js";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Route path='/product-list' component={ProductListPage} />
                     <Route path='/product-details' component={ProductPage} />
                     <Route path='/profile' component={ProfilePage} />
+                    <Route path='/cart' component={CartPage} />
                 </Switch>
                 <Footer />
             </Router>
