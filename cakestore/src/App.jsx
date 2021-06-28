@@ -1,41 +1,41 @@
-import React from "react";
-import "./App.scss";
-import { Login, Register } from "./components/login/index";
+import React from 'react'
+import './App.scss'
+import { Login, Register } from './components/login/index'
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
       isLogginActive: true
-    };
+    }
   }
 
-  componentDidMount() {
-    //Add .right by default
-    this.rightSide.classList.add("right");
+  componentDidMount () {
+    // Add .right by default
+    this.rightSide.classList.add('right')
   }
 
-  changeState() {
-    const { isLogginActive } = this.state;
+  changeState () {
+    const { isLogginActive } = this.state
 
     if (isLogginActive) {
-      this.rightSide.classList.remove("right");
-      this.rightSide.classList.add("left");
+      this.rightSide.classList.remove('right')
+      this.rightSide.classList.add('left')
     } else {
-      this.rightSide.classList.remove("left");
-      this.rightSide.classList.add("right");
+      this.rightSide.classList.remove('left')
+      this.rightSide.classList.add('right')
     }
-    this.setState(prevState => ({ isLogginActive: !prevState.isLogginActive }));
+    this.setState(prevState => ({ isLogginActive: !prevState.isLogginActive }))
   }
 
-  render() {
-    const { isLogginActive } = this.state;
-    const current = isLogginActive ? "Register" : "Login";
-    const currentActive = isLogginActive ? "login" : "register";
+  render () {
+    const { isLogginActive } = this.state
+    const current = isLogginActive ? 'Register' : 'Login'
+    const currentActive = isLogginActive ? 'login' : 'register'
     return (
-      <div className="App">
-        <div className="login">
-          <div className="container" ref={ref => (this.container = ref)}>
+      <div className='App'>
+        <div className='login'>
+          <div className='container' ref={ref => (this.container = ref)}>
             {isLogginActive && (
               <Login containerRef={ref => (this.current = ref)} />
             )}
@@ -51,22 +51,22 @@ class App extends React.Component {
           />
         </div>
       </div>
-    );
+    )
   }
 }
 
 const RightSide = props => {
   return (
     <div
-      className="right-side"
+      className='right-side'
       ref={props.containerRef}
       onClick={props.onClick}
     >
-      <div className="inner-container">
-        <div className="text">{props.current}</div>
+      <div className='inner-container'>
+        <div className='text'>{props.current}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
