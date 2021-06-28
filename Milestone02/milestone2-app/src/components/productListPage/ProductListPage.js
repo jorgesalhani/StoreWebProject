@@ -7,7 +7,7 @@ function ProductListPage(props) {
 
     function getProductList()
     {
-        let prod = data['products']
+        let prod = data['products'].cakes
 
         return prod.map( product => {
                 return <CardToBuy key={product.id} name={product.name} price={product.price} img={product.img} description={product.description}/>
