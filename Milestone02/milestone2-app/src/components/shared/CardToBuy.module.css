@@ -5,6 +5,8 @@
     transition: 0.3s;
     margin: 15px;
     padding: 5px;
+    flex: 1;
+    min-width: 30%;
 }
 
 .cardImg {

@@ -1,16 +1,27 @@
 import React from "react"
-import PresentationBanner from "../shared/PresentationBanner"
 import TextBanner from "../shared/TextBanner"
-import MainContent from "./MainContent"
+import data from "../../database/db.json";
+import CardToBuy from "../shared/CardToBuy";
 
 function ProductListPage(props) {
 
+    function getProductList()
+    {
+        let prod = data['products']
+
+        return prod.map( product => {
+                return <CardToBuy key={product.id} name={product.name} price={product.price} img={product.img} description={product.description}/>
+            }
+        )
+    }
 
     return (
-        <div>
+        <>
             <TextBanner text={props.location.state} color={"#DAC2AB"} />
-            <MainContent productType = {props.location.state} />
-        </div>
+            <div style={{display: "flex", flexWrap: "wrap"}}>
+                {getProductList()}
+            </div>
+        </>
     )
 }
 
