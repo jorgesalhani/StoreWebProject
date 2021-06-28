@@ -5,11 +5,12 @@ function CartItem(props){
     return (
         <div className={CartItemCSS.cartItem}>
             <img className={CartItemCSS.cartImageItem}
-                src={props.img} />
+                src={props.product.img} />
             <div className={CartItemCSS.cartInfoItem}>
-                <h3>{props.name}</h3>
-                <p>{props.description}</p>
+                <h3>{props.product.name}</h3>
+                <p>{props.product.description}</p>
             </div>
+            <button onClick={props.removeFunction}></button>
         </div>
     )
 }

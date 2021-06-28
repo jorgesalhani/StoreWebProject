@@ -11,23 +11,27 @@ import ProfilePage from "./components/ProfilePage/ProfilePage";
 import CartPage from "./components/CartPage/CartPage.js";
 import PurchasePage from "./components/PurchasesPage/PurchasePage.js";
 import RegisterPage from "./components/RegisterPage/RegisterPage.js";
+import {SessionContextProvider} from "./contexts/SessionContext";
 
 
 function App() {
     return (
         <>
+
             <Router>
-                <Header />
-                <NavBar />
-                <Switch>
-                    <Route path='/' exact component={HomePage} />
-                    <Route path='/product-list' component={ProductListPage} />
-                    <Route path='/product-details' component={ProductPage} />
-                    <Route path='/profile' component={ProfilePage} />
-                    <Route path='/cart' component={CartPage} />
-                    <Route path='/register' component={RegisterPage} />
-                    <Route path='/purchases' component={PurchasePage} />
-                </Switch>
+                <SessionContextProvider>
+                    <Header />
+                    <NavBar />
+                    <Switch>
+                        <Route path='/' exact component={HomePage} />
+                        <Route path='/product-list' component={ProductListPage} />
+                        <Route path='/product-details' component={ProductPage} />
+                        <Route path='/profile' component={ProfilePage} />
+                        <Route path='/cart' component={CartPage} />
+                        <Route path='/register' component={RegisterPage} />
+                        <Route path='/purchases' component={PurchasePage} />
+                    </Switch>
+                </SessionContextProvider>
                 <Footer />
             </Router>
 

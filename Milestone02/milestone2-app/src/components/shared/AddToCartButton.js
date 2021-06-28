@@ -1,14 +1,10 @@
 import React from "react"
 import chart from "../img/chart.png"
 
-function AddToCartButton(productId) {
-
-    const addItemToCart = (productId) => {
-        console.log(productId)
-    }
+function AddToCartButton(props) {
 
     return (
-        <button onClick={() => console.log(productId)}>
+        <button onClick={props.onClick}>
             <img className="chart"
             src={chart} alt=""/>
         </button>
