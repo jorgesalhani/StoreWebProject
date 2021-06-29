@@ -2,6 +2,7 @@ import React from "react"
 import TextBanner from "../shared/TextBanner"
 import data from "../../database/db.json";
 import CardToBuy from "../shared/CardToBuy";
+import axios from "axios"
 
 function ProductListPage(props) {
 

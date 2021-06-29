@@ -1,32 +1,44 @@
-import React from 'react'
-import ProfileCardCSS from './ProfileCard.module.css'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-const P = styled.p`
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+`;
+
+const Label = styled.label`
   font-size: 1.5em;
-`
+  margin-left: 4em;
+`;
+const Input = styled.input`
+  font-size: 1.5em;
+  margin-left: 4em;
+  border: 1;
+  background-color: light-gray;
+  margin-bottom: 25px;
+`;
 
-function ProfileCard (props) {
+function ProfileCard(props) {
   return (
-    <div className={ProfileCardCSS.profileCard}>
-      <div className={ProfileCardCSS.infoBlock}>
-        <P>Nome</P>
-        <P className={ProfileCardCSS.infoField}>{props.name}</P>
-        <P>E-mail</P>
-        <P className={ProfileCardCSS.infoField}>{props.email}</P>
-        <P>Cartão cadastrado</P>
-        <P className={ProfileCardCSS.infoField}>{props.creditCard} </P>
-      </div>
-      <div className={ProfileCardCSS.infoBlock}>
-        <P>Usuário</P>
-        <P className={ProfileCardCSS.infoField}>{props.user}</P>
-        <P>Endereço</P>
-        <P className={ProfileCardCSS.infoField}>{props.address}</P>
-        <P>Data de nascimento</P>
-        <P className={ProfileCardCSS.infoField}>{props.birthday}</P>
-      </div>
-    </div>
-  )
+    <Form onSubmit={e => console.log(e)}>
+      <Label htmlFor='name'>Nome</Label>
+      <Input placeholder={props.name} />
+      <Label htmlFor='email'>E-mail</Label>
+      <Input placeholder={props.email} />
+      <Label htmlFor='card'>Cartão cadastrado</Label>
+      <Input placeholder={props.creditCard} />
+      <Label htmlFor='uname'>Usuário</Label>
+      <Input placeholder={props.user} />
+      <Label htmlFor='address'>Endereço</Label>
+      <Input placeholder={props.address} />
+      <Label htmlFor='birthday'>Data de nascimento</Label>
+      <Input placeholder={props.birthday} />
+      <Input value='Submit' type='button' onClick={e => console.log(e)} />
+    </Form>
+  );
 }
 
-export default ProfileCard
+export default ProfileCard;

@@ -1,30 +1,36 @@
-import React from 'react'
-import ProfileCard from './ProfileCard'
-import ProfilePageCSS from './ProfilePage.module.css'
-import styled from 'styled-components'
+import React from "react";
+import ProfileCard from "./ProfileCard";
+import styled from "styled-components";
 
-const Form = styled.div`
-  margin-top: 2em;
+const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-`
+  justify-content: space-between;
+  height: 500px;
+`;
 
-function ProfilePage () {
+const H2 = styled.h2`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  margin: 25px 0px 40px 75px;
+`;
+
+function ProfilePage() {
   return (
-    <Form className={ProfilePageCSS.profileContent}>
-      <h2 style={{ margin: '50px' }}>Minha conta</h2>
+    <Container>
+      <H2>Minha conta</H2>
       <ProfileCard
-        name='Robert Marinho Cruz e Veiga'
-        email='rob.veiga@sample.com'
-        creditCard='****.****.****.2512'
-        user='betomarinho'
-        address='Alameda das hortências, 2039'
-        birthday='24/06/1993'
+        name="Robert Marinho Cruz e Veiga"
+        email="rob.veiga@sample.com"
+        creditCard="****.****.****.2512"
+        user="betomarinho"
+        address="Alameda das hortências, 2039"
+        birthday="24/06/1993"
       />
-      <button className={ProfilePageCSS.editButton}>Editar perfil</button>
-    </Form>
-  )
+    </Container>
+  );
 }
 
-export default ProfilePage
+export default ProfilePage;
