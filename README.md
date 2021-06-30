@@ -12,6 +12,12 @@ Real estate (Houses, apartments and land)
 
 We chose: a cakery
 
+# Conteúdo:
+File Milestone01: You can find our mock-up pages designed with Figma
+File Milestone02: You can find our functional webpage boostraped with npx create-react-app
+
+====== PROJECTS SPECIFICATIONS ==============================
+
 ## Requirements
 1. The system must have 2 types of users: Clients and Administrators
 - Administrators are responsible for registering/managing administrators, customers, and products/services provided. The application already comes with an account admin with password admin.
