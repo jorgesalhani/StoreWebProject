@@ -59,6 +59,21 @@ npm start
 ```
 And now, hopefully you are redirected to our homepage!!! :D
 
+### What you can find:
+1. At the first moment, you are at our homepage. You can scroll down and see the products on promotion and a list with the best-selling products
+2. At the top, you can click at the logo and go back to our homepage anytime, check out your cart (a list of selected-to-buy products) and your profile
+3. At the navigation bar, you can choose between: cakes, pies, cupcakes, vegan, diet products
+4. Select any of them, and you will be redirect to a page with our products. At this point you can select all you want to buy and check your cart!
+5. Also, you can click on every product. With this action you will be redirect to a page where you can find more detailed specifications about every product
+6. After all, you can see on your cart every product you selected and, scrolling down, your purchases' total value
+
+### What you cannot find (yet!)
+1. A fully function profile registration, with database integration,
+2. A final step to definetelly buy your selected products, following by a message you've completed your current purchase
+3. An update on your cart, zeroing the products bought
+
+Hope you enjoy!! :D
+
 
 
 
