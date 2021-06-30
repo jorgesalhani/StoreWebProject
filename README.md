@@ -20,7 +20,7 @@ We chose: a cakery
 Follow these steps to get access to our application
 
 ### Cloning the repository:
-Open your terminal and type:
+Open your terminal, type and run the following command line:
 
 ```console
 git clone https://github.com/jorgesalhani/StoreWebProject.git
