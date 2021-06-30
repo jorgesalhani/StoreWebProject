@@ -4,9 +4,9 @@ import chart from "../img/chart.png"
 function AddToCartButton(props) {
 
     return (
-        <button 
+        <button style={{width: "auto",margin:"30px"}}
             onClick={props.onClick}>
-            <img style={{width:"30px"}} 
+            <img  
             className="chart"
             src={chart} alt=""/>
         </button>
