@@ -16,6 +16,58 @@ We chose: a cakery
 1. File Milestone01: You can find our mock-up pages designed with Figma
 2. File Milestone02: You can find our functional webpage boostraped with npx create-react-app
 
+## How to use:
+Follow these steps to get access to our application
+
+### Cloning the repository:
+Open your terminal and type:
+
+```console
+git clone https://github.com/jorgesalhani/StoreWebProject.git
+```
+Now you have our project!
+
+### Go to the app directory:
+After cloning thes repository, type and run the command:
+
+```console
+cd StoreWebProject
+```
+and, inside this file, type and run the command:
+
+```console
+cd Milestone02
+```
+Then, run
+
+```console
+cd milestone2-app
+```
+Now you are on our application repository!
+
+### Install npm:
+Run the following command:
+
+```console
+npm install
+```
+### Starting a react server:
+After the installing process, run the following command line:
+
+```console
+npm start
+```
+And now, hopefully you are redirected to our homepage!!! :D
+
+
+
+
+
+
+
+
+
+
 ====== PROJECTS SPECIFICATIONS ==============================
 
 ## Requirements
