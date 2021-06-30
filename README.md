@@ -46,7 +46,7 @@ cd milestone2-app
 Now you are on our application repository!
 
 ### Install npm:
-At the same repository (that is, the milestone2-app repository), un the following command:
+At the same repository (that is, the milestone2-app repository), run the following command:
 
 ```console
 npm install
