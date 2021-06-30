@@ -13,8 +13,8 @@ Real estate (Houses, apartments and land)
 We chose: a cakery
 
 # Conteúdo:
-File Milestone01: You can find our mock-up pages designed with Figma
-File Milestone02: You can find our functional webpage boostraped with npx create-react-app
+1. File Milestone01: You can find our mock-up pages designed with Figma
+2. File Milestone02: You can find our functional webpage boostraped with npx create-react-app
 
 ====== PROJECTS SPECIFICATIONS ==============================
 
