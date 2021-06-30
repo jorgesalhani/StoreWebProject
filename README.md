@@ -68,7 +68,7 @@ And now, hopefully you are redirected to our homepage!!! :D
 6. After all, you can see on your cart every product you selected and, scrolling down, your purchases' total value
 
 ### What you cannot find (yet!)
-1. A fully function profile registration, with database integration,
+1. A fully functional profile registration, with database integration,
 2. A final step to definetelly buy your selected products, following by a message you've completed your current purchase
 3. An update on your cart, zeroing the products bought
 
