@@ -6,14 +6,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 500px;
 `;
 
 const H2 = styled.h2`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3em;
+  font-size: 1.5em;
   margin: 25px 0px 40px 75px;
 `;
 

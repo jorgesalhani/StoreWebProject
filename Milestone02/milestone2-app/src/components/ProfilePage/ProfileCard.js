@@ -6,7 +6,6 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 500px;
 `;
 
 const Label = styled.label`

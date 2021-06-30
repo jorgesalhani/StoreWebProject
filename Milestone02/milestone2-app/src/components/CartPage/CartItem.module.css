@@ -7,6 +7,8 @@
 
 .cartInfoItem {
     text-align: "center";
+    padding-top: 10%;
+    padding: 4%;
 }
 
 .cartInfoItem h3 {
@@ -22,6 +24,7 @@
     display: flex;
     border-bottom: 1px solid rgb(209, 190, 161);
     justify-content: center;
+    min-width: 500px;
 }
 
 .cartItem:hover {
