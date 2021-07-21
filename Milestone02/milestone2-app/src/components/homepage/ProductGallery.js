@@ -41,7 +41,6 @@ function ProductGallery() {
                 <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
                 <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
                 <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
-                <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
             </AliceCarousel>
         </div>
         </>
