@@ -3,6 +3,7 @@ import TextBanner from "../shared/TextBanner"
 import data from "../../database/db.json";
 import CardToBuy from "../shared/CardToBuy";
 import axios from "axios"
+import NavBar from "../shared/NavBar";
 
 function ProductListPage(props) {
 
@@ -38,6 +39,7 @@ function ProductListPage(props) {
 
     return (
         <>
+            <NavBar />
             <TextBanner text={ReturnProductType(location)} color={"#DAC2AB"} />
             <div style={{display: "flex", flexWrap: "wrap"}}>
                 {getProductList()}

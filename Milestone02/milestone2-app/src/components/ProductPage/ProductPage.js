@@ -2,6 +2,7 @@ import React, {useContext} from "react"
 import ProductDetails from "./ProductDetails";
 import {SessionContext} from "../../contexts/SessionContext";
 import Data from "../../database/db.json"
+import NavBar from "../shared/NavBar";
 
 function ProductPage(props) {
 
@@ -24,9 +25,12 @@ function ProductPage(props) {
 
 
     return (
+      <>
+        <NavBar />
         <div>
             <ProductDetails product={product} />
         </div>
+      </>
     )
 }
 

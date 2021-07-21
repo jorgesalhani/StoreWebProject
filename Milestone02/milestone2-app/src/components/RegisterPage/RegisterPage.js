@@ -1,9 +1,11 @@
 import React from "react"
 import RegisterCardCSS from "./RegisterCard.module.css"
+import NavBar from "../shared/NavBar";
 
 function RegisterPage(props) {
     return (
         <>
+            <NavBar />
             <h2 className={RegisterCardCSS.titleCard}>Criar conta</h2>
             <div className={RegisterCardCSS.registerCard}>
                 <div className={RegisterCardCSS.infoBlock}>
