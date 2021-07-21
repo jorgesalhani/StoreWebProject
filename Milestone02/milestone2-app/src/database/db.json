@@ -37,7 +37,6 @@
           { "id": 27,"name": "Cupcake de maracuja", "description": "Cupcake artesanal de maracujá belga, recheado com creme de avelã e gotas de chocolate branco", "price": 12.99, "img": "https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg?cs=srgb&dl=pexels-jess-bailey-designs-913136.jpg&fm=jpg"},
           { "id": 28,"name": "Cupcake de limão", "description": "Cupcake artesanal de limão belga, recheado com creme de avelã e gotas de chocolate branco", "price": 12.99, "img": "https://images.pexels.com/photos/3992386/pexels-photo-3992386.jpeg?cs=srgb&dl=pexels-cottonbro-3992386.jpg&fm=jpg"},
           { "id": 29,"name": "Cupcake de laranja", "description": "Cupcake artesanal de laranja belga, recheado com creme de avelã e gotas de chocolate branco", "price": 12.99, "img": "https://images.pexels.com/photos/5994864/pexels-photo-5994864.jpeg?cs=srgb&dl=pexels-maksim-goncharenok-5994864.jpg&fm=jpg"}
-
         ],
 
       "vegans":
@@ -71,6 +70,9 @@
       { "id": 2, "userName": "cliente2", "password": "cliente2" }
     ],
     "usersLogs": [
+    ],
+    "orders": [
+
     ]
   }
 
