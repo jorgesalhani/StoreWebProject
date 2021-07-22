@@ -32,8 +32,14 @@ function CartPage(){
           {
             cart.length == 0 ? <></> :
             <div className={CartPageCSS.totalPurchase}>
-              Valor total da compra: R${GetCartPrice()}
-               <Link to= "/profile/orders"> <button onClick={ () => CreateOrders()}>Confirmar Compra</button> </Link>
+              Valor total da compra: R$ {GetCartPrice()}
+               <Link to= "/profile/orders"> 
+                <button style={{
+                                marginLeft:"10%",
+                                padding: "2%",
+                                fontSize: "15px"
+                              }} 
+                        onClick={ () => CreateOrders()}>Confirmar Compra</button> </Link>
             </div>
           }
 
