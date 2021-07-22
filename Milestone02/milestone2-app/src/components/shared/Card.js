@@ -4,6 +4,7 @@ import CardCSS from "./Card.module.css"
 function Card(props) {
     return (
         <div className={CardCSS.card}>
+            <a href="http://google.com" class="link"> </a>
             <img src={props.img} alt="Torta img"/>
                 <div className={CardCSS.container}>
                     <h4>{props.name}</h4>
