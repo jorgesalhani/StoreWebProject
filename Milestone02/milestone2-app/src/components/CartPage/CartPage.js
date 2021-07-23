@@ -43,7 +43,7 @@ function CartPage(){
                               }} 
                         onClick={ () => {
                             CreateOrders();
-                            window.alert("Compra feita com sucesso! Redirecionando para a página de compras realizadas");
+                            window.alert("Compra feita com sucesso! Redirecionando para a página de compras realizadas...");
                         }
                         }>Confirmar Compra</button> </Link>
             </div>

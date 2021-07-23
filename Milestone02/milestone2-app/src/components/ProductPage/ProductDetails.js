@@ -43,8 +43,11 @@ function ProductDetails(props) {
                                         margin: "5%"
                                         }} 
                                 type="button" 
-                                onClick={() => 
-                                    AddItemToCart(props.product)}>Adicionar ao carrinho
+                                onClick={() =>{
+                                    AddItemToCart(props.product)
+                                    window.alert(props.product.name + " adicionado ao carrinho")
+                                }
+                                }>Adicionar ao carrinho
                         </button>
                     </div>
                 </tr>
