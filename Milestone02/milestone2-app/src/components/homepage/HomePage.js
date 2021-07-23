@@ -21,7 +21,7 @@ function HomePage() {
                   <tbody>
                   <tr>
                     <td>
-                      <img src="../img/torta1.png" alt="torta1" style={{width: "100%" }}/>
+                      <img src="../img/makeCake.png" alt="torta1" style={{width: "100%" }}/>
                     </td>
                     <td style={{textAlign: "center"}}>
                       <h1>Clique aqui e fale conosco!</h1>
