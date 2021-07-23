@@ -6,6 +6,8 @@ import TextBanner from "../shared/TextBanner";
 import NavBar from "../shared/NavBar";
 import TableItem from "./TableItem";
 import {Link} from "react-router-dom";
+import HomeCardsCSS from "../shared/HomeCards.module.css"
+
 
 function HomePage() {
     return (
@@ -20,12 +22,24 @@ function HomePage() {
                 <table style={{ tableLayout: "fixed",  borderCollapse: "collapse", textAlign: "center"}}>
                   <tbody>
                   <tr>
-                    <td>
-                      <img src="../img/makeCake.png" alt="torta1" style={{width: "100%" }}/>
+                    <td className={HomeCardsCSS.card}>
+                      <img
+                            src="https://images.pexels.com/photos/3983576/pexels-photo-3983576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="makingCake" 
+                            style={{
+                                      margin: "7%",
+                                      width: "70%",
+                                      borderRadius: "10px"
+                                    }}/>
                     </td>
                     <td style={{textAlign: "center"}}>
                       <h1>Clique aqui e fale conosco!</h1>
-                      <Link to="/createcake"><button style={{height: "50px", margin:"20%"}}> Montar meu bolo </button></Link>
+                      <Link to="/createcake"><button 
+                            style={{
+                                      height: "50px", 
+                                      margin:"20%",
+                                      fontSize: "15px"
+                                  }}> Montar meu bolo </button></Link>
                     </td>
                   </tr>
                   </tbody>
