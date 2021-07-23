@@ -25,7 +25,11 @@ function CardToBuy(props) {
                 </div>
                 <div className={CardToBuyCSS.buying}>
                     <p>R$ {props.product.price}</p>
-                    <AddToCartButton onClick = {() => AddItemToCart(props.product)} />
+                    <AddToCartButton onClick = {() =>{
+                      AddItemToCart(props.product)
+                      window.alert(props.product.name + " adicionado ao carrinho!")
+                    }
+                    }/>
                 </div>
             </div>
     )

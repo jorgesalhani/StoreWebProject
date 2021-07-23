@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 
 
 
+
 function CartPage(){
     const { cart, RemoveItemFromCart, GetCartPrice, CreateOrders } = useContext(SessionContext)
 
@@ -31,12 +32,16 @@ function CartPage(){
 
           {
             cart.length == 0 ? <></> :
-            <div className={CartPageCSS.totalPurchase}>
-              Valor total da compra: R${GetCartPrice()}
-               <Link to= "/profile/orders"> <button onClick={ () => CreateOrders()}>Confirmar Compra</button> </Link>
-            </div>
+              <>
+                <div className={CartPageCSS.totalPurchase}>
+                  Valor total da compra: R${GetCartPrice()}
+                   <Link to= "/profile/orders"> <button onClick={ () => {
+                       CreateOrders();
+                       window.alert("Compra feita com sucesso! Redirecionando para a página de compras realizadas")
+                   }}>Confirmar Compra</button> </Link>
+                </div>
+              </>
           }
-
         </div>
       </>
     )

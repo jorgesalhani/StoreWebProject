@@ -1,4 +1,5 @@
 import {createContext, useState} from "react";
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 export const SessionContext = createContext({})
 
@@ -14,7 +15,6 @@ export const SessionContextProvider = ({children}) => {
     function CreateOrder(){
 
         setOrders([...orders, ...cart])
-        console.log([[], cart])
         ClearCart()
     }
 
