@@ -5,10 +5,11 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import bestSeller from "./BestSeller.json";
 import CardToBuy from "../shared/CardToBuy";
+import HomeCards from "../shared/HomeCards";
 
 
 
-function ProductGallery() {
+function ProductGallery(props) {
     const responsive = {
         0: {
             items: 1
@@ -23,8 +24,18 @@ function ProductGallery() {
             items: 4
         }
     };
-    
+
     const best_seller = bestSeller.products
+
+    function getProductList()
+    {
+        let prod = best_seller["diet"]
+
+        return prod.map( product => {
+                return <HomeCards key={product.id} product={product}/>
+            }
+        )
+    }
     
     return (
         <>
@@ -36,11 +47,7 @@ function ProductGallery() {
                 infinite="true"
                 responsive={responsive}
                 mouseTracking="true">
-                <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
-                <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
-                <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
-                <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
-                <Card img="../img/torta1.png" name="Torta de morango"  description="Amendoim e Geleia de Amêndoas"/>
+                {getProductList()}
             </AliceCarousel>
         </div>
         </>
