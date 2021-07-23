@@ -42,10 +42,10 @@ function CartPage(){
                                 fontSize: "15px"
                               }} 
                         onClick={ () => {
-                            CreateOrders();
-                            window.alert("Compra feita com sucesso! Redirecionando para a página de compras realizadas...");
-                        }
-                        }>Confirmar Compra</button> </Link>
+                            CreateOrders()
+                            window.alert("Compra feita com sucesso! Redirecionando para a página de compras realizadas...")
+                        }}>
+                    Confirmar Compra</button> </Link>
             </div>
           }
         </div>
