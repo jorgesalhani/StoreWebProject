@@ -40,6 +40,5 @@ button {
 .cartPriceAndButton {
     align-items: center;
     justify-content: space-between;
-    display: flex;
     margin: 10%;
 }
