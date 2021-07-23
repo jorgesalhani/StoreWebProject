@@ -3,7 +3,6 @@ import ProfileCard from "./ProfileCard";
 import styled from "styled-components";
 import NavBarCSS from "../shared/NavBar.module.css";
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import ProductListPage from "../productListPage/ProductListPage";
 import OrdersPage from "./OrdersPage";
 import PersonalDataPage from "./PersonalDataPage";
 

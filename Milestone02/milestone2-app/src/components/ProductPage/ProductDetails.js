@@ -41,7 +41,11 @@ function ProductDetails(props) {
                         <button style={{
                                         padding:"2%",
                                         margin: "5%"
-                                        }} type="button" onClick={() => AddItemToCart(props.product)}>Adicionar ao carrinho</button>
+                                        }} 
+                                type="button" 
+                                onClick={() => 
+                                    AddItemToCart(props.product)}>Adicionar ao carrinho
+                        </button>
                     </div>
                 </tr>
                 </tbody>

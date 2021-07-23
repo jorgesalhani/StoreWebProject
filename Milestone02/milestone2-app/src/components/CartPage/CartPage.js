@@ -32,15 +32,21 @@ function CartPage(){
 
           {
             cart.length == 0 ? <></> :
-              <>
-                <div className={CartPageCSS.totalPurchase}>
-                  Valor total da compra: R${GetCartPrice()}
-                   <Link to= "/profile/orders"> <button onClick={ () => {
-                       CreateOrders();
-                       window.alert("Compra feita com sucesso! Redirecionando para a página de compras realizadas")
-                   }}>Confirmar Compra</button> </Link>
-                </div>
-              </>
+
+            <div className={CartPageCSS.totalPurchase}>
+              Valor total da compra: R$ {GetCartPrice()}
+               <Link to= "/profile/orders"> 
+                <button style={{
+                                marginLeft:"10%",
+                                padding: "2%",
+                                fontSize: "15px"
+                              }} 
+                        onClick={ () => {
+                            CreateOrders();
+                            window.alert("Compra feita com sucesso! Redirecionando para a página de compras realizadas");
+                        }
+                        }>Confirmar Compra</button> </Link>
+            </div>
           }
         </div>
       </>
