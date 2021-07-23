@@ -15,7 +15,13 @@ function ProductPage(props) {
     let products = Data['products'][productType]
 
     let product
-
+    
+    for(let i = 0; i < products.length; i++ ){
+      if(products[i].id == productId){
+          product = products[i]
+          break
+      }
+    }
 
     return (
       <>
