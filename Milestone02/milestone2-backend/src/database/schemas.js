@@ -15,6 +15,7 @@ const userSchema = new mongoose.Schema({
 const productSchema = new mongoose.Schema({
   name: String,
   desc: String,
+  type: String, // regular / promo / best-seller
   imagePath: String,
   price: String,
   stock: Number,

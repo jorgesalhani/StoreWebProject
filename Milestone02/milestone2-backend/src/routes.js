@@ -3,7 +3,7 @@ const routes = express.Router()
 
 const responseHandler = require('./utils/responseHandler')
 const { login, register } = require('./auth')
-const { insertProduct, getProduct } = require('./product')
+const { insertProduct, getProduct, getBestSellers, getPromo, updateProduct } = require('./product')
 const { insertOrder, getOrder } = require('./order')
 
 // Auth
@@ -12,7 +12,11 @@ routes.post('/auth/register', responseHandler(register))
 
 // Products
 routes.post('/product', responseHandler(insertProduct))
+routes.patch('/product', responseHandler(updateProduct))
+routes.delete('/product', responseHandler(updateProduct))
 routes.get('/product', responseHandler(getProduct))
+routes.get('/product/best-sellers', responseHandler(getBestSellers))
+routes.get('/product/promo', responseHandler(getPromo))
 
 // Products
 routes.post('/order', responseHandler(insertOrder))
