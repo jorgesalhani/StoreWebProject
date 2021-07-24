@@ -16,16 +16,8 @@ function LoginPage (props) {
           <input className='NAME' type='text' />
           <p>E-mail</p>
           <input className='EMAIL' type='text' />
-          <p>Cartão cadastrado</p>
+          <p>Senha</p>
           <input className='CCARD' type='text' />
-        </div>
-        <div className={LoginCardCSS.infoBlock}>
-          <p>Usuário</p>
-          <input className='USER' type='text' />
-          <p>Endereço</p>
-          <input className='ADDRESS' type='text' />
-          <p>Data de nascimento</p>
-          <input className='BDAY' type='text' />
         </div>
       </div>
 
