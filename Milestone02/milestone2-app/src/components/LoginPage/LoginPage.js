@@ -16,8 +16,10 @@ function LoginPage (props) {
           <input className='NAME' type='text' />
           <p>E-mail</p>
           <input className='EMAIL' type='text' />
+          <p>User</p>
+          <input className='USER' type='text' />
           <p>Senha</p>
-          <input className='CCARD' type='text' />
+          <input className='PASSWORD' type='text' />
         </div>
       </div>
 
@@ -27,10 +29,8 @@ function LoginPage (props) {
           LoginProfile(
             document.getElementsByClassName('NAME')[0].value,
             document.getElementsByClassName('EMAIL')[0].value,
-            document.getElementsByClassName('CCARD')[0].value,
             document.getElementsByClassName('USER')[0].value,
-            document.getElementsByClassName('ADDRESS')[0].value,
-            document.getElementsByClassName('BDAY')[0].value
+            document.getElementsByClassName('PASSWORD')[0].value,
           )
         }}
       >
