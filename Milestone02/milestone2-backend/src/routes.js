@@ -1,19 +1,22 @@
 const express = require('express')
-const jwt = require('express-jwt')
 const routes = express.Router()
 
 const responseHandler = require('./utils/responseHandler')
 const { login, register } = require('./auth')
-
-// const AuthMiddleware = jwt({ secret: 'test', algorithms: ['HS256'] })
+const { insertProduct, getProduct } = require('./product')
+const { insertOrder, getOrder } = require('./order')
 
 // Auth
 routes.post('/auth/login', responseHandler(login))
 routes.post('/auth/register', responseHandler(register))
 
 // Products
+routes.post('/product', responseHandler(insertProduct))
+routes.get('/product', responseHandler(getProduct))
 
-// routes.post('/login', AuthMiddleware, responseHandler(auth.login))
+// Products
+routes.post('/order', responseHandler(insertOrder))
+// routes.get('/product', responseHandler(getOrder))
 
 module.exports = routes
 

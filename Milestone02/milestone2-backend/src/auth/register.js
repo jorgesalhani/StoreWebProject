@@ -29,7 +29,7 @@ const register = async (req) => {
   const newUser = new User({ firstName, lastName, email, password })
 
   newUser.save((err, user) => {
-    if (err) console.error('error saving', user.email, err)
+    if (err) console.error('error saving user', user.email, err)
     console.log('user', user)
   })
 
@@ -38,7 +38,8 @@ const register = async (req) => {
     firstName,
     lastName,
     email,
-    password
+    password,
+    type: 'client'
   })
 }
 

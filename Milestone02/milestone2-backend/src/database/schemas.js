@@ -10,12 +10,20 @@ const userSchema = new mongoose.Schema({
 
 // Product
 const productSchema = new mongoose.Schema({
-  name: String
+  name: String,
+  desc: String,
+  imagePath: String,
+  price: String,
+  stock: Number,
+  totalSold: Number
 })
 
 // Order
 const orderSchema = new mongoose.Schema({
-  name: String
+  productId: String,
+  clientName: String,
+  comment: String,
+  pricePaid: String
 })
 
 // Model Objects
