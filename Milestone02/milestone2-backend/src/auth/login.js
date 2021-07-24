@@ -14,6 +14,7 @@ const login = async (req) => {
     return user
   })
 
+  if (!returnedUser[0]) throw createError(404, 'user not found')
   return sign(returnedUser[0])
 }
 
