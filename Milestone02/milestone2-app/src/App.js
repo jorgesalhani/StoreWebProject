@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer.js"
 import ProductListPage from "./components/productListPage/ProductListPage.js"
 import ProductPage from "./components/ProductPage/ProductPage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
+import LoginPage from "./components/LoginPage/LoginPage";
 import CartPage from "./components/CartPage/CartPage.js";
 import PurchasePage from "./components/PurchasesPage/PurchasePage.js";
 import RegisterPage from "./components/RegisterPage/RegisterPage.js";
@@ -26,12 +27,13 @@ function App() {
                         <Route path='/' exact component={HomePage} />
                         <Route path='/product-list' component={ProductListPage} />
                         <Route path='/product-details' component={ProductPage} />
-                        <Route path='/profile' component={ProfilePage} />
+                        <Route path='/login' component={LoginPage} />
                         <Route path='/cart' component={CartPage} />
                         <Route path='/register' component={RegisterPage} />
                         <Route path='/purchases' component={PurchasePage} />
                         <Route path='/createcake' component={PersonalizeCake} />
                         <Route path='/admin' component={AdminPage} />
+                        <Route path='/profile' component={ProfilePage} />
                     </Switch>
                 </SessionContextProvider>
                 <Footer />
