@@ -1,34 +1,35 @@
- import React from "react";
-import styled from "styled-components";
-import axios from "axios"
+import React from 'react'
+import styled from 'styled-components'
+import axios from 'axios'
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-`;
+`
 
 const Label = styled.label`
   font-size: 1.5em;
   margin-left: 4em;
-`;
+`
 const Input = styled.input`
   font-size: 1.5em;
   margin-left: 4em;
   border: 1;
   background-color: light-gray;
   margin-bottom: 25px;
-`;
+`
 
 const updateProfile = async (e) => {
   const res = await axios.post('/auth/register',
-  { foo: "bar" },
-  { headers: { Authorization: `Bearer ${token}` }})
+    { foo: 'bar' },
+    // { headers: { Authorization: `Bearer ${token}` }})
+    { headers: { } })
   console.log(res)
 }
 
-function ProfileCard(props) {
+function ProfileCard (props) {
   return (
     <Form onSubmit={e => console.log(e)}>
       <Label htmlFor='name'>Nome</Label>
@@ -45,7 +46,7 @@ function ProfileCard(props) {
       <Input placeholder={props.birthday} />
       <Input value='Submit' type='button' onClick={updateProfile} />
     </Form>
-  );
+  )
 }
 
-export default ProfileCard;
+export default ProfileCard
