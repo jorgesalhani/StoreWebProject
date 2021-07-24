@@ -5,6 +5,7 @@ const { Product } = require('../database/schemas')
 // Will allow any input, based on UNIQUE KEY product name, but patches
 // only existing fields. Updating product name is not possible.
 const updateProduct = async (req) => {
+  console.log(req.user._doc)
   const {
     name,
     desc,

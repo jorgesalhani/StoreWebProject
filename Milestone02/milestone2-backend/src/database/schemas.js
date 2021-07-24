@@ -4,11 +4,12 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
+  password: String,
   cardnumber: String,
   user: String,
   address: String,
   birthday: String,
-  type: String
+  type: String // user / admin
 })
 
 // Product
