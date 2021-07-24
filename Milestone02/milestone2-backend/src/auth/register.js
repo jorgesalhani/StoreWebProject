@@ -29,22 +29,23 @@ const register = async (req) => {
     throw createError(404, 'Email poorly formated')
   }
 
-  const newUser = new User({ name, email, cardnumber, user, address, birthday })
+  const newUser = new User({ name, email, cardnumber, user, address, birthday, type: 'client' })
 
   newUser.save((err, user) => {
     if (err) console.error('error saving user', user.email, err)
-    console.log('user', user)
+    console.log('saved user', user)
   })
 
   return sign({
     id: newUser._id,
     name,
     email,
+    password,
     cardnumber,
     user,
     address,
     birthday,
-    type: 'client'
+    type: newUser.type
   })
 }
 

@@ -1,5 +1,3 @@
-const createError = require('http-errors')
-
 const { User } = require('../database/schemas')
 
 // User self update
@@ -18,11 +16,11 @@ const updateUser = async (req) => {
   if (address) patch.address = address
   if (birthday) patch.birthday = birthday
 
-  const updatedProduct = await User.findOneAndUpdate({ _id: req.user._doc._id }, patch, (err, product) => {
+  const updatedUser = await User.findOneAndUpdate({ _id: req.user.id }, patch, (err, user) => {
     if (err) console.error('product update query')
-    return product
+    return user
   })
-  return updatedProduct
+  return updatedUser
 }
 
 module.exports.updateUser = updateUser
