@@ -2,6 +2,7 @@ import React from 'react'
 import RegisterCardCSS from './RegisterCard.module.css'
 import NavBar from '../shared/NavBar'
 import axios from 'axios'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 function RegisterPage (props) {
   return (
@@ -40,7 +41,7 @@ function RegisterPage (props) {
           )
         }}
       >
-        Registrar
+        <Link to= "/profile" style={{ textDecoration: 'none' }}>Registrar</Link>
       </button>
     </>
   )
