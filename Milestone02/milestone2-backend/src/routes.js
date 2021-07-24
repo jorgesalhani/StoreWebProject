@@ -38,3 +38,7 @@ Basicamente, a gente faz apenas alguns poucos pedidos pro back. Eles ocorrem em:
 - PersonalDataPage -> precisamos recuperar os dados do usuário do
     banco para preencher as infos aqui. -> GET /user
 */
+
+/*
+
+*/
