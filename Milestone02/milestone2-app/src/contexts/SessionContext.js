@@ -1,13 +1,21 @@
 import {createContext, useState} from "react";
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 export const SessionContext = createContext({})
 
 export const SessionContextProvider = ({children}) => {
 
     const [cart, setCart] = useState([])
+    const [orders, setOrders] = useState([])
 
     function AddItemToCart(item){
         setCart([...cart, item])
+    }
+
+    function CreateOrder(){
+
+        setOrders([...orders, ...cart])
+        ClearCart()
     }
 
     function RemoveItemFromCart(id){
@@ -15,7 +23,6 @@ export const SessionContextProvider = ({children}) => {
             (cartItem) => cartItem.id !== id
         )
         setCart(filteredCart)
-        console.log(cart)
     }
 
     function ClearCart(){
@@ -30,7 +37,7 @@ export const SessionContextProvider = ({children}) => {
         }
     }
 
-    return <SessionContext.Provider value={{cart, AddItemToCart, RemoveItemFromCart, ClearCart, GetCartPrice }}>{children}</SessionContext.Provider>
+    return <SessionContext.Provider value={{cart, orders, AddItemToCart, RemoveItemFromCart, ClearCart, GetCartPrice, CreateOrders: CreateOrder }}>{children}</SessionContext.Provider>
 }
 
 

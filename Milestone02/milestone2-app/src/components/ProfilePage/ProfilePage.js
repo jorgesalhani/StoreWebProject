@@ -1,12 +1,11 @@
 import React from "react";
 import ProfileCard from "./ProfileCard";
 import styled from "styled-components";
+import NavBarCSS from "../shared/NavBar.module.css";
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import OrdersPage from "./OrdersPage";
+import PersonalDataPage from "./PersonalDataPage";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`;
 
 const H2 = styled.h2`
   display: flex;
@@ -16,19 +15,30 @@ const H2 = styled.h2`
   margin: 25px 0px 40px 75px;
 `;
 
+class ProfilePageNav extends React.Component {
+  render() {
+    return  (
+      <nav className={NavBarCSS.NavBar}>
+        <ul className={NavBarCSS.ul}>
+          <li className={NavBarCSS.li}><Link to= "/profile/mydata" style={{ textDecoration: 'none' }}>Meus Dados</Link></li>
+          <li className={NavBarCSS.li}><Link to= "/profile/orders" style={{ textDecoration: 'none' }}>Meus Pedidos</Link></li>
+        </ul>
+      </nav>
+    );
+  }
+}
+
 function ProfilePage() {
   return (
-    <Container>
-      <H2>Minha conta</H2>
-      <ProfileCard
-        name="Robert Marinho Cruz e Veiga"
-        email="rob.veiga@sample.com"
-        creditCard="****.****.****.2512"
-        user="betomarinho"
-        address="Alameda das hortências, 2039"
-        birthday="24/06/1993"
-      />
-    </Container>
+    <>
+      <Router>
+        <ProfilePageNav/>
+        <Switch>
+          <Route path='/profile/mydata' component={PersonalDataPage} />
+          <Route path='/profile/orders' component={OrdersPage} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

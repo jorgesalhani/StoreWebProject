@@ -21,7 +21,7 @@ function Header() {
                 src={chart} alt="" />
             </Link>
 
-            <Link to="/profile">
+            <Link to="/profile/mydata">
                 <img className="profile"
                 src={profile} alt="" />
             </Link>
