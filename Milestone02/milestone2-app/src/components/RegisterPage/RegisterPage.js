@@ -28,6 +28,7 @@ function RegisterPage(props) {
             
             <button className={RegisterCardCSS.editButton}
                     onClick={() => {
+                        console.log('test')
                         RegisterProfile(
                             document.getElementsByClassName("NAME")[0].value,
                             document.getElementsByClassName("EMAIL")[0].value,
@@ -43,7 +44,7 @@ function RegisterPage(props) {
     )
 }
 
-function RegisterProfile(name_, email_, ccard_, user_, add_, bday_) {
+async function RegisterProfile(name_, email_, ccard_, user_, add_, bday_) {
     let jsonFileDB = require("../../database/db.json")
     let formFills = {
         name: name_,

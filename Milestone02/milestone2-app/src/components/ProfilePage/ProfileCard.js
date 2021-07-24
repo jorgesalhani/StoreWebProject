@@ -1,5 +1,6 @@
  import React from "react";
 import styled from "styled-components";
+import axios from "axios"
 
 const Form = styled.form`
   display: flex;
@@ -20,6 +21,13 @@ const Input = styled.input`
   margin-bottom: 25px;
 `;
 
+const updateProfile = async (e) => {
+  const res = await axios.post('/auth/register',
+  { foo: "bar" },
+  { headers: { Authorization: `Bearer ${token}` }})
+  console.log(res)
+}
+
 function ProfileCard(props) {
   return (
     <Form onSubmit={e => console.log(e)}>
@@ -35,7 +43,7 @@ function ProfileCard(props) {
       <Input placeholder={props.address} />
       <Label htmlFor='birthday'>Data de nascimento</Label>
       <Input placeholder={props.birthday} />
-      <Input value='Submit' type='button' onClick={e => console.log(e)} />
+      <Input value='Submit' type='button' onClick={updateProfile} />
     </Form>
   );
 }

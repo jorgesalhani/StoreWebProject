@@ -21,6 +21,7 @@
     "styled-components": "^5.3.0",
     "web-vitals": "^1.1.2"
   },
+  "proxy": "http://localhost:3005",
   "scripts": {
     "start": "CHOKIDAR_USEPOLLING=true react-scripts start",
     "server": "json-server --watch src/database/db.json --port 5000 --no-cors",
