@@ -16,7 +16,7 @@ routes.get('/product', responseHandler(getProduct))
 
 // Products
 routes.post('/order', responseHandler(insertOrder))
-// routes.get('/product', responseHandler(getOrder))
+routes.get('/order', responseHandler(getOrder))
 
 module.exports = routes
 
