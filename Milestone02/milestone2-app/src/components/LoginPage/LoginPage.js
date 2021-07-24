@@ -53,8 +53,8 @@ async function LoginProfile (name_, email_, ccard_, user_, add_, bday_) {
     address: add_,
     birthday: bday_
   }
-//   const res = await axios.post('/auth/Login', reqData)
-//   window.localStorage.setItem('token', res.data)
+  const res = await axios.post('/auth/Login', reqData)
+  window.localStorage.setItem('token', res.data)
 }
 
 export default LoginPage
