@@ -3,6 +3,6 @@ const token = {}
 export default token
 
 
-import token from ./token
+// import token from ./token
 
-token.string = resultado.da.chamada.api
+// token.string = resultado.da.chamada.api

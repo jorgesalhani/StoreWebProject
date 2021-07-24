@@ -11,6 +11,8 @@ import PurchasePage from "./components/PurchasesPage/PurchasePage.js";
 import RegisterPage from "./components/RegisterPage/RegisterPage.js";
 import {SessionContextProvider} from "./contexts/SessionContext";
 import PersonalizeCake from "./components/CreateCakePage/PersonalizeCake";
+import AdminPage from "./components/AdminPage/AdminPage";
+
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
                         <Route path='/register' component={RegisterPage} />
                         <Route path='/purchases' component={PurchasePage} />
                         <Route path='/createcake' component={PersonalizeCake} />
+                        <Route path='/admin' component={AdminPage} />
                     </Switch>
                 </SessionContextProvider>
                 <Footer />

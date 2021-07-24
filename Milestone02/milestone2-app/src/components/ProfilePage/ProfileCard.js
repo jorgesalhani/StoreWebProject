@@ -22,10 +22,10 @@ const Input = styled.input`
 `;
 
 const updateProfile = async (e) => {
-  const res = await axios.post('/auth/register',
-  { foo: "bar" },
-  { headers: { Authorization: `Bearer ${token}` }})
-  console.log(res)
+  // const res = await axios.post('/auth/register',
+  // { foo: "bar" },
+  // { headers: { Authorization: `Bearer ${token}` }})
+  // console.log(res)
 }
 
 function ProfileCard(props) {
