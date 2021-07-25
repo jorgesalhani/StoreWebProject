@@ -22,6 +22,8 @@ const insertProduct = async (req) => {
     if (err) console.error('register search query')
     return user
   })
+
+  // Product name is UNIQUE KEY
   if (foundProduct.length) {
     console.error('Product already registered')
     throw createError(403, 'Already registered')

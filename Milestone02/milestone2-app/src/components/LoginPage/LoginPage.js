@@ -41,16 +41,19 @@ function LoginPage (props) {
             document.getElementsByClassName('NAME')[0].value,
             document.getElementsByClassName('EMAIL')[0].value,
             document.getElementsByClassName('USER')[0].value,
-            document.getElementsByClassName('PASSWORD')[0].value,
+            document.getElementsByClassName('PASSWORD')[0].value
           )
         }}
       >
-        <p><Link to= "/profile" style={{ textDecoration: 'none' }}>Login</Link></p>
+        <p><Link to='/profile' style={{ textDecoration: 'none' }}>Login</Link></p>
       </button>
 
       <p style={{
-          textAlign: "center",
-          marginBottom: "10px"}}>Não tem conta? <Link to= "/register" style={{ textDecoration: 'none' }}>Registrar</Link></p>
+        textAlign: 'center',
+        marginBottom: '10px'
+      }}
+      >Não tem conta? <Link to='/register' style={{ textDecoration: 'none' }}>Registrar</Link>
+      </p>
     </>
   )
 }
@@ -64,8 +67,9 @@ async function LoginProfile (name_, email_, ccard_, user_, add_, bday_) {
     address: add_,
     birthday: bday_
   }
-  const res = await axios.post('/auth/Login', reqData)
-  window.localStorage.setItem('token', res.data)
+  const res = await axios.post('/auth/login', reqData)
+    .then(res => window.localStorage.setItem('token', res.data))
+    .catch(err => console.log('deu err')) // avisar o usuario
 }
 
 export default LoginPage

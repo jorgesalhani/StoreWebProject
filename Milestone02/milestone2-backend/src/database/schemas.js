@@ -4,17 +4,19 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
+  password: String,
   cardnumber: String,
   user: String,
   address: String,
   birthday: String,
-  type: String
+  type: String // user / admin
 })
 
 // Product
 const productSchema = new mongoose.Schema({
   name: String,
   desc: String,
+  type: String, // regular / promo / best-seller
   imagePath: String,
   price: String,
   stock: Number,
