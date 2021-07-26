@@ -38,6 +38,38 @@ and, inside this file, type and run the command:
 ```console
 cd Milestone02
 ```
+
+In this repository you can find 
+
+* milestone-app: front-end
+* milestone-backend: back-end
+
+Open those repositories in different terminals with
+
+```console
+cd milestone2-app
+```
+
+and 
+
+```console
+cd milestone2-backend
+```
+
+At each of them, install the dependecies by running
+
+```console
+npm install
+```
+And run the servers from both front-end and back-end with the command
+
+```console
+npm start
+```
+
+
+
+
 Then, run
 
 ```console

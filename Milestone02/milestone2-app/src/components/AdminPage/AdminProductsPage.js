@@ -58,7 +58,7 @@ function AdminProductsPage () {
     {
       title: "Tipo",
       field: "type"
-    }
+    },
     {
       title: 'Name',
       field: 'name'
