@@ -164,7 +164,7 @@ curl -X POST -H "Content-Type: application/json" \
 
 At the terminal running the back-end you must receive the following response:
 
-```json
+```javascript
 saved user { _id: 60fe5b8521542024b3138919,
   name: 'jubi',
   email: 'ssjubicriatopy10@piriri.pororo',
