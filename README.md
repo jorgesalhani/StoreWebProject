@@ -56,6 +56,15 @@ and
 cd milestone2-backend
 ```
 
+### Pre-requisites
+
+You need to have:
+
+* [MongoDB](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04-pt), 
+* [Node](https://www.geeksforgeeks.org/installation-of-node-js-on-linux/)
+
+
+### Running react servers
 At each of them, install the dependecies by running
 
 ```console
@@ -67,29 +76,26 @@ And run the servers from both front-end and back-end with the command
 npm start
 ```
 
-
-
-
-Then, run
+### Running mongoDB local server
+At another terminal start a database mongoDB server with
 
 ```console
-cd milestone2-app
+mongod
 ```
-Now you are on our application repository!
 
-### Install npm:
-At the same repository (that is, the milestone2-app repository), run the following command:
+When mongoDB and milestone2-backend are running together, you will be informed with the message "we're connected" at the milestone2-backend terminal.
 
-```console
-npm install
-```
-### Starting a react server:
-After the installing process, run the following command line:
+And now, hopefully you are redirected to our homepage at localhost:3000 !
 
-```console
-npm start
-```
-And now, hopefully you are redirected to our homepage!!! :D
+### Problems
+Unfortunatelly we could not 
+
+1. Set authorization token to client and admin sides,
+2. Integrate button with HTTP requests. 
+
+For the authorization problems, we will assume that by running the page at localhost:3000 you have already logged into our webstore
+
+For HTTP requests will be making them with [Insomnia](https://support.insomnia.rest/article/156-installation), but you can do it on browser using [Postman](https://www.postman.com/).
 
 ### What you can find:
 1. At the first moment, you are at our homepage. You can scroll down and see the products on promotion and a list with the best-selling products
