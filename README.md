@@ -147,7 +147,7 @@ If you click to confirm your purchases a pop-up message you inform you that you 
 
 #### Admin-side pages
 
-By inserting the endpoint /admin to your url (that is: localhost:3000/admin) (yes, there is no autentication :sad: )
+By inserting the endpoint /admin to your url (that is: localhost:3000/admin) (yes, there is no autentication 😞 )
 1. **Admin page**
 * Navbar with Products, Clients, Orders sections
 
