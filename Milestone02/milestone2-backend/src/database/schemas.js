@@ -9,14 +9,14 @@ const userSchema = new mongoose.Schema({
   user: String,
   address: String,
   birthday: String,
-  type: String // user / admin
+  type: String // client / admin
 })
 
 // Product
 const productSchema = new mongoose.Schema({
   name: String,
   description: String,
-  type: String, // regular / promo / best-seller
+  type: String, // regular / promo / best-seller / pie / cake...
   img: String,
   price: String,
   stock: Number,
