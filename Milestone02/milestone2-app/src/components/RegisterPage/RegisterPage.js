@@ -56,6 +56,7 @@ async function RegisterProfile (name_, email_, ccard_, user_, add_, bday_) {
     address: add_,
     birthday: bday_
   }
+  console.log(reqData)
   const res = await axios.post('/auth/register', reqData)
   window.localStorage.setItem('token', res.data)
 }

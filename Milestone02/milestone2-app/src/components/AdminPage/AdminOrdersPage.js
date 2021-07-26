@@ -3,7 +3,7 @@ import MaterialTable from "material-table";
 
 function AdminOrdersPage() {
     const data = [
-      { "id": 41 ,
+      { "id": 1 ,
       "client": "Bolo de chocolate", 
       "coments": "Bolo artesanal", 
       "price": 27.99, 
