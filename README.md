@@ -98,42 +98,47 @@ For the authorization problems, we will assume that by running the page at local
 For HTTP requests will be making them with [Insomnia](https://support.insomnia.rest/article/156-installation), but you can do it on browser using [Postman](https://www.postman.com/).
 
 ### What you can find:
-1. Homepage: 
+1. **Homepage**: 
 * Navbar with our products (Cakes, Pies, Cupcakes, Vegans, Diet)
 * Carousel with some of our products
 * Make your Cake button
 
 If you click on one of the best-selling producs:
-2. Product page:
+
+2. **Product page**:
 * Navbar with our products (Cakes, Pies, Cupcakes, Vegans, Diet)
 * Product description, price and an 'add to cart' button 
 
 If you click on one of the product type at header navbar:
-3. Products page:
+
+3. **Products page**:
 * List with every product within the chosen type
 * By clicking the pictures, you are redirected to its product page as item 2.
 * By clicking the 'cart' button, you add the product to your cart. You are warned with a pop-up alert.
 
 Once chosen some products, you can go to the header and click the 'cart' icon:
-4. Cart page:
+
+4. **Cart page**:
 * List of each product you added to your cart
 * Product description, its price and a button to remove it from your cart
 * Button to confirm your purchases by scrolling down at the end of the page
 * Total price you will pay for the products on your cart
 
 If you click to confirm your purchases a pop-up message you inform you that you finished your purchase. It will empty your cart and redirect you to your orders at you profile page (at localhost:3000/profile/orders)
-5. Profile page:
+
+5. **Profile page**:
 * Navbar with your data and your orders
 * At your orders, you will have a list with all orders you finished
 * (Not concluded...) At your data you should be able to see your registry data and modify it with the 'submit' button
 
 (Not concluded...) By actively clicking the profile icon at page header you will be redirected to the login page:
-5. Login page:
+
+5. **Login page**:
 * Text insert fields to log into our page
 * Login button
 * Registry text-clickable redirecting to the registry page
 
-6. Registering page
+6. **Registering page**
 * Text insert fields to register into our page
 * (Not concluded...) Register button, that redirects to your profile page
 
