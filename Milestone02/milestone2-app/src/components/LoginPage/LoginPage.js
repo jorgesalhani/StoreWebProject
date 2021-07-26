@@ -1,13 +1,25 @@
 import React from 'react'
 import LoginCardCSS from './LoginCard.module.css'
-import NavBar from '../shared/NavBar'
 import axios from 'axios'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+
+class ProfilePageNav extends React.Component {
+  render() {
+    return  (
+      <nav className={LoginCardCSS.NavBar}>
+        <ul className={LoginCardCSS.ul}>
+          <li className={LoginCardCSS.li}><Link to= "/profile/mydata" style={{ textDecoration: 'none' }}>Meus Dados</Link></li>
+          <li className={LoginCardCSS.li}><Link to= "/profile/orders" style={{ textDecoration: 'none' }}>Meus Pedidos</Link></li>
+        </ul>
+      </nav>
+    );
+  }
+}
 
 function LoginPage (props) {
   return (
     <>
-      <NavBar />
+      <ProfilePageNav />
       <h2 className={LoginCardCSS.titleCard}>Login</h2>
       <div className={LoginCardCSS.registerCard}>
         <div className={LoginCardCSS.infoBlock}>

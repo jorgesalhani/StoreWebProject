@@ -1,6 +1,7 @@
 import React from "react";
 import MaterialTable from "material-table";
 
+
 function AdminClientsPage() {
     const data = [
       { "id": 1 ,
@@ -35,7 +36,7 @@ function AdminClientsPage() {
               title="Clientes"
               data={data}
               columns={columns}
-              options={{ search: true, paging: false, filtering: true, exportButton: true }}
+              // options={{ search: true, paging: false, filtering: true, exportButton: true }}
           />
           </>
       )
