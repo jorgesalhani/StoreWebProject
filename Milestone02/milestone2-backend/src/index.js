@@ -20,7 +20,7 @@ app.use(qs({
   }
 }))
 
-app.use(jwtMiddleware({ secret: SECRET, algorithms: ['HS256'] }).unless({ path: ['/auth/register', '/auth/login'] }))
+// app.use(jwtMiddleware({ secret: SECRET, algorithms: ['HS256'] }).unless({ path: ['/auth/register', '/auth/login'] }))
 app.use(routes)
 
 const port = process.env.PORT || 3005
