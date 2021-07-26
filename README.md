@@ -95,9 +95,12 @@ Unfortunatelly we could not
 
 For the authorization problems, we will assume that by running the page at localhost:3000 you have already logged into our webstore
 
-For HTTP requests will be making them with [Insomnia](https://support.insomnia.rest/article/156-installation), but you can do it on browser using [Postman](https://www.postman.com/).
+For HTTP requests will be making them with [cURL](https://linuxize.com/post/curl-post-request/)
 
 ### What you can find:
+
+#### Client-side pages
+
 1. **Homepage**: 
 * Navbar with our products (Cakes, Pies, Cupcakes, Vegans, Diet)
 * Carousel with some of our products
@@ -142,22 +145,36 @@ If you click to confirm your purchases a pop-up message you inform you that you 
 * Text insert fields to register into our page
 * (Not concluded...) Register button, that redirects to your profile page
 
+#### Admin-side pages
 
-### What you can find:
-1. At the first moment, you are at our homepage. You can scroll down and see the products on promotion and a list with the best-selling products
-2. At the top, you can click at the logo and go back to our homepage anytime, check out your cart (a list of selected-to-buy products) and your profile
-3. At the navigation bar, you can choose between: cakes, pies, cupcakes, vegan, diet products
-4. Select any of them, and you will be redirect to a page with our products. At this point you can select all you want to buy and check your cart!
-5. Also, you can click on every product. With this action you will be redirect to a page where you can find more detailed specifications about every product
-6. After all, you can see on your cart every product you selected and, scrolling down, your purchases' total value
+By inserting the endpoint /admin to your url (that is: localhost:3000/admin) (yes, there is no autentication :sad: )
+1. **Admin page**
+* Navbar with Products, Clients, Orders sections
 
-Hope you enjoy!! :D
+Each section refers to our admin database with the products in our store, our clients and each of their orders data
 
+### Back-end HTTP requests
 
+Open a new terminal and run the following command:
 
+```console
+curl -X POST -H "Content-Type: application/json" \
+    -d '{"name": "jubi", "user": "jubijubi", "address": "Rua das alquilhonas, 2019", "cardnumber": "12345679", "birthday": "10/01/1996", "lastName": "cria", "email": "ssjubicriatopy10@piriri.pororo", "password": "102030"}' localhost:3005/auth/register
+```
 
+At the terminal running the back-end you must receive the following response:
 
-
+```json
+saved user { _id: 60fe5b8521542024b3138919,
+  name: 'jubi',
+  email: 'ssjubicriatopy10@piriri.pororo',
+  cardnumber: '12345679',
+  user: 'jubijubi',
+  address: 'Rua das alquilhonas, 2019',
+  birthday: '10/01/1996',
+  type: 'client',
+  __v: 0 }
+```
 
 
 
