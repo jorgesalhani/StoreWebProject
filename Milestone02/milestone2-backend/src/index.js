@@ -20,6 +20,7 @@ app.use(qs({
   }
 }))
 
+// To allow authentitation, uncomment this line
 // app.use(jwtMiddleware({ secret: SECRET, algorithms: ['HS256'] }).unless({ path: ['/auth/register', '/auth/login'] }))
 app.use(routes)
 
