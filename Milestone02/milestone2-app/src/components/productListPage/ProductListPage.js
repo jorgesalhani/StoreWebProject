@@ -1,11 +1,26 @@
-import React from "react"
+import React, { useState, useEffect } from 'react';
 import TextBanner from "../shared/TextBanner"
-import data from "../../database/db.json";
 import CardToBuy from "../shared/CardToBuy";
 import axios from "axios"
 import NavBar from "../shared/NavBar";
 
+
+
 function ProductListPage(props) {
+
+    
+    const [prods, setprods] = useState([]);
+ 
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios(
+                'http://localhost:3005/product',
+            );
+            setprods(getProductList(result.data))  
+        };
+    
+        fetchData();
+    }, []);
 
     let location = props.location.pathname.split('/')
     location = location[location.length - 1]
@@ -27,9 +42,10 @@ function ProductListPage(props) {
         }
     }
 
-    function getProductList()
+    function getProductList(prod)
     {
-        let prod = data['products'][location]
+        // let prod = data['products'][location]
+
 
         return prod.map( product => {
                 return <CardToBuy key={product.id} product={product}/>
@@ -42,7 +58,7 @@ function ProductListPage(props) {
             <NavBar />
             <TextBanner text={ReturnProductType(location)} color={"#DAC2AB"} />
             <div style={{display: "flex", flexWrap: "wrap"}}>
-                {getProductList()}
+                {prods}
             </div>
         </>
     )

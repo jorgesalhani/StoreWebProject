@@ -10,7 +10,7 @@ const register = async (req) => {
 
   if (!name) throw createError(400, 'name must be provided')
   if (!email) throw createError(400, 'email must be provided')
-  if (!password) throw createError(400, 'email must be provided')
+  if (!password) throw createError(400, 'password must be provided')
   if (!cardnumber) throw createError(400, 'cardnumber must be provided')
   if (!user) throw createError(400, 'user must be provided')
   if (!address) throw createError(400, 'address must be provided')

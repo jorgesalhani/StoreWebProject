@@ -5,6 +5,7 @@ import axios from 'axios'
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 function RegisterPage (props) {
+
   return (
     <>
       <NavBar />
@@ -25,6 +26,8 @@ function RegisterPage (props) {
           <input className='ADDRESS' type='text' />
           <p>Data de nascimento</p>
           <input className='BDAY' type='text' />
+          <p>Password</p>
+          <input className='PASSWORD' type='text' />
         </div>
       </div>
 
@@ -37,7 +40,8 @@ function RegisterPage (props) {
             document.getElementsByClassName('CCARD')[0].value,
             document.getElementsByClassName('USER')[0].value,
             document.getElementsByClassName('ADDRESS')[0].value,
-            document.getElementsByClassName('BDAY')[0].value
+            document.getElementsByClassName('BDAY')[0].value,
+            document.getElementsByClassName('PASSWORD')[0].value
           )
         }}
       >
@@ -47,17 +51,18 @@ function RegisterPage (props) {
   )
 }
 
-async function RegisterProfile (name_, email_, ccard_, user_, add_, bday_) {
+async function RegisterProfile (name_, email_, ccard_, user_, add_, bday_, pass_) {
   const reqData = {
     name: name_,
     email: email_,
     cardnumber: ccard_,
     user: user_,
     address: add_,
-    birthday: bday_
+    birthday: bday_,
+    password: pass_
   }
   console.log(reqData)
-  const res = await axios.post('/auth/register', reqData)
+  const res = await axios.post('http://localhost:3000/auth/register', reqData)
   window.localStorage.setItem('token', res.data)
 }
 

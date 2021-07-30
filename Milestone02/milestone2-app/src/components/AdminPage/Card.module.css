@@ -1,0 +1,31 @@
+.registerCard {
+    background-color: rgba(241, 228, 217, 0.432);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0% 10%;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.infoBlock {
+    margin: 5%;
+    height: 250px;
+}
+
+input[type] {
+    margin-bottom: 40px;
+}
+
+.editButton {
+    font-size: 20px;
+    margin: 0% 43%;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.titleCard {
+    text-align: center;
+    margin: 2% 10%;
+}

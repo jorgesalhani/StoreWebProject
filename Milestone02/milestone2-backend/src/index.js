@@ -1,3 +1,4 @@
+const cors = require("cors")
 require('dotenv').config()
 require('./database/connection')
 const express = require('express')
@@ -8,6 +9,7 @@ const routes = require('./routes')
 const SECRET = process.env.SECRET
 
 const app = express()
+app.use(cors())
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
@@ -21,7 +23,7 @@ app.use(qs({
 }))
 
 // To allow authentitation, uncomment this line
-// app.use(jwtMiddleware({ secret: SECRET, algorithms: ['HS256'] }).unless({ path: ['/auth/register', '/auth/login'] }))
+app.use(jwtMiddleware({ secret: SECRET, algorithms: ['HS256'] }).unless({ path: ['/auth/register', '/auth/login'] }))
 app.use(routes)
 
 const port = process.env.PORT || 3005

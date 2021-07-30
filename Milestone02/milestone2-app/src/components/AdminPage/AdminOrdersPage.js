@@ -12,42 +12,34 @@ function AdminOrdersPage() {
       }
     ];
   
-    const columns = [
-        {
-          title: "id",
-          field: "id",
-        },
-        {
-          title: "Cliente",
-          field: "client",
-        },
-        {
-          title: "Comentários",
-          field: "coments",
-        },
-        {
-          title: "Preço",
-          field: "price",
-        },
-        {
-          title: "Vendas",
-          field: "sells",
-        },
-        {
-          title: "Data",
-          field: "data"
-        }
-      ];
-      
       return (
-          <>
-          <MaterialTable
-              title="Produtos"
-              data={data}
-              columns={columns}
-              options={{ search: true, paging: false, filtering: true, exportButton: true }}
-          />
-          </>
+        <table style={{
+          width: "100%",
+          textAlign: "center",
+          alignContent: "space-between",
+          borderCollapse: "separate",
+          borderSpacing: "50px 0",
+          wordWrap: "break-word",
+          tableLayout: "fixed",
+          borderSpacing: "0 2em"
+        }}>
+          <tr>
+            <th>id</th>
+            <th>Cliente</th>
+            <th>Comentário</th>
+            <th>Preço</th>
+            <th>Vendas</th>
+            <th>Data</th>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>Cliente</td>
+            <td>Comentário</td>
+            <td>Preço</td>
+            <td>Vendas</td>
+            <td>Data</td>
+          </tr>
+        </table>
       )
   }
 export default AdminOrdersPage
